@@ -8,15 +8,25 @@ Composer Version: 2.3.7
 ## Database
 
 `sudo apt update`
+
 `sudo apt upgrade`
+
 `sudo apt install mysql-server`
+
 `mysql --version`
+
 `sudo service mysql stop`
+
 `sudo mysqld_safe --skip-grant-tables`
+
 `sudo service mysql start`
+
 `sudo mysql -u root`
+
 ``
+
 ``
+
 ``
 
 
