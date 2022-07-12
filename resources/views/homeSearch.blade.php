@@ -34,6 +34,7 @@
     <header class="masthead">
 
         <div class="container">
+            <h1 class="text-center text-custom">Αναζήτηση ημερήσιας κρουαζιέρας</h2>
             <div class="row">
                 <div class="col-lg-8">
                     <div class="card border-0">
@@ -50,23 +51,24 @@
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="col-lg-4">
+                    <div class="card border-0">
+                        <div class="card-body p-0">
 
-            <div class="container">
-                <div class="row">
-                    <div class='col-sm-6'>
-                        <div class="form-group">
-                            <div class='input-group date' id='datetimepicker1'>
-                                <input type='text' class="form-control" />
-                                <span class="input-group-addon">
-                                    <span class="glyphicon glyphicon-calendar"></span>
-                                </span>
-                            </div>
+                            <!-- AUTO COMPLETE DROPDOWN -->
+                            <select class="selectpicker form-control border-2 mb-1 px-4 py-4 rounded shadow">
+                                <option value="ΥΔΡΑ">ΣΚΙΑΘΟΣ</option>
+                                <option value="ΣΠΕΤΣΕΣ">ΣΠΕΤΣΕΣ</option>
+                                <option value="ΞΑΝΑ ΣΠΕΤΣΕΣ">ΞΑΝΑ ΣΠΕΤΣΕΣ</option>
+                                <option value="Los Angeles">ΣΚΙΑΘΟΣ</option>
+                                <option value="Chicago">ΣΚΙΑΘΟΣ</option>
+                            </select>
                         </div>
                     </div>
-
                 </div>
             </div>
+
+         
         </div>
 
     </header>
