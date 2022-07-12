@@ -49,3 +49,7 @@ Route::get('/alonissos', function () {
 Route::get('/monemvasia', function () {
    return view('monemvasia');
 });
+
+Route::get('/navigationWithPages', function () {
+   return view('navigationWithPages');
+});
