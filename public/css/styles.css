@@ -350,6 +350,7 @@ textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  border: none;
 }
 
 button,
@@ -3122,6 +3123,11 @@ textarea.form-control-lg {
   color: #000;
   background-color: #0dcaf0;
   border-color: #0dcaf0;
+}
+.btn-custom {
+  color: #000;
+  background-color: #ffffff;
+  border-color: #ffffff;
 }
 .btn-info:hover {
   color: #000;
@@ -11308,6 +11314,18 @@ textarea.form-control-lg {
   font-size: 4.5rem;
 }
 
+header.searchbox {
+  position: relative;
+  background-color: #343a40;
+  background-size: cover;
+  padding-top: 8rem;
+  padding-bottom: 8rem; 
+
+  min-height:100%;
+  background:linear-gradient(0deg, rgba(73, 95, 176, 0.3), rgba(0, 72, 150, 0.3)), url("../images/spetses-pegasus-cruises.jpg");
+  background-size:cover;
+}
+
 header.masthead {
   position: relative;
   background-color: #343a40;
@@ -11319,7 +11337,7 @@ header.masthead {
 header.masthead:before {
   content: "";
   position: absolute;
-  background-color: #1c375e;
+  background-color: #1c375e00 ;
   height: 100%;
   width: 100%;
   top: 0;
@@ -11336,6 +11354,11 @@ header.masthead h1, header.masthead .h1 {
   }
   header.masthead h1, header.masthead .h1 {
     font-size: 3rem;
+  }
+
+  header.searchbox{
+    padding-top: 12rem;
+    padding-bottom: 35rem;
   }
 }
 

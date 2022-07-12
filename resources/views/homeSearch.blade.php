@@ -11,11 +11,75 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Bootstrap icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+
+    <link rel="stylesheet" href="js/jquery-ui.css">
+
+    <style>
+        .btn-circle.btn-xl {
+            width: 70px;
+            height: 70px;
+            padding: 13px 18px;
+            border-radius: 60px;
+            font-size: 15px;
+            text-align: center;
+            margin-right: 10px;
+        }
+
+        .container-counter {
+            margin-top: 100px;
+            margin-bottom: 100px;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        .counter-box {
+            display: block;
+            background: #0b3f82;
+            padding: 40px 20px 37px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .counter-box p {
+            margin: 5px 0 0;
+            padding: 0;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 500
+        }
+
+        .counter-box i {
+            font-size: 60px;
+            margin: 0 0 15px;
+            color: #fff;
+
+        }
+
+        .counter {
+            display: block;
+            font-size: 32px;
+            font-weight: 700;
+            color: #fff;
+            line-height: 28px
+        }
+
+        .counter-box.colored {
+            background: #0b3f82;
+        }
+
+        .counter-box.colored p,
+        .counter-box.colored i,
+        .counter-box.colored .counter {
+            color: #fff
+        }
+    </style>
 </head>
 
 <body>
@@ -31,75 +95,119 @@
         </div>
     </nav>
     <!-- Masthead-->
-    <header class="masthead">
+    <header class="searchbox">
 
         <div class="container">
             <h1 class="text-center text-custom">Αναζήτηση ημερήσιας κρουαζιέρας</h2>
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="card border-0">
-                        <div class="card-body p-0">
+                <div class="row mb-2">
+                    <div class="col-lg-8">
+                        <div class="card border-0">
+                            <div class="card-body p-0">
 
-                            <!-- AUTO COMPLETE DROPDOWN -->
-                            <select class="selectpicker form-control border-2 mb-1 px-4 py-4 rounded shadow">
-                                <option value="ΥΔΡΑ">ΣΚΙΑΘΟΣ</option>
-                                <option value="ΣΠΕΤΣΕΣ">ΣΠΕΤΣΕΣ</option>
-                                <option value="ΞΑΝΑ ΣΠΕΤΣΕΣ">ΞΑΝΑ ΣΠΕΤΣΕΣ</option>
-                                <option value="Los Angeles">ΣΚΙΑΘΟΣ</option>
-                                <option value="Chicago">ΣΚΙΑΘΟΣ</option>
-                            </select>
+                                <!-- AUTO COMPLETE DROPDOWN -->
+                                <select class="selectpicker form-control-lg border-2 mb-1 px-4 py-4 rounded shadow">
+                                <option hidden value="Επιλογή κατηγορίας επιβάτη">Επιλογή ημερήσιας εκδρομής</option>
+                                    <option value="ΥΔΡΑ">ΣΚΙΑΘΟΣ</option>
+                                    <option value="ΣΠΕΤΣΕΣ">ΥΔΡΑ</option>
+                                    <option value="Los Angeles">ΣΚΟΠΕΛΟΣ</option>
+                                    <option value="Chicago">ΑΛΟΝΝΗΣΟΣ</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="d-grid gap-2">
+                            <button class="btn-lg btn-light" type="button" disabled><i class="fa fa-calendar"></i> <input type="text" class="datepicker" placeholder="Επιλέξτε ημερομηνία"></button>
+
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="card border-0">
-                        <div class="card-body p-0">
-
-                            <!-- AUTO COMPLETE DROPDOWN -->
-                            <select class="selectpicker form-control border-2 mb-1 px-4 py-4 rounded shadow">
-                                <option value="ΥΔΡΑ">ΣΚΙΑΘΟΣ</option>
-                                <option value="ΣΠΕΤΣΕΣ">ΣΠΕΤΣΕΣ</option>
-                                <option value="ΞΑΝΑ ΣΠΕΤΣΕΣ">ΞΑΝΑ ΣΠΕΤΣΕΣ</option>
-                                <option value="Los Angeles">ΣΚΙΑΘΟΣ</option>
-                                <option value="Chicago">ΣΚΙΑΘΟΣ</option>
-                            </select>
+                <div class="row mb-2">
+                    <div class="col-lg-8">
+                        <div class="card border-0">
+                            <div class="card-body p-0">
+                                <select class="form-select form-select-lg" aria-label=".form-select-lg example">
+                                    <option selected>Επιλογή κατηγορίας επιβάτη</option>
+                                    <option value="1">Ενήλικος --> 25$</option>
+                                    <option value="2">Ανήλικος --> 15$</option>
+                                    <option value="3">Φοιτητής --> 18$</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
+                    <div class="col-lg-4 mb-2">
+                        <div class="card border-0">
+                            <div class="card-body p-0">
+                            <div class="d-grid gap-2">
+                            <button class="btn-lg btn-light" type="button"><i class="fa fa-search"></i> Αναζήτηση</button>
+                        </div>
 
-         
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+          
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="d-grid gap-2">
+                            <button class="btn-lg btn-light" type="button" disabled>Προσθήκη εισητηρίου</button>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 d-flex justify-content-center">
+                        <div class="row">
+                            <button type="button" class="btn btn-custom btn-circle btn-xl px-2" onClick="onClickAdd()"><i class="fa fa-plus"></i> </button>
+                            <button class="btn btn-custom btn-circle btn-xl"><a id="clicks">0</a></button>
+                            <button type="button" class="btn btn-custom btn-circle btn-xl px-2" onClick="onClickRemove()"><i class="fa fa-minus"></i> </button>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
         </div>
 
     </header>
+
     <!-- Icons Grid-->
-    <section class="features-icons bg-light text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                        <div class="features-icons-icon d-flex"><i class="bi-window m-auto text-primary"></i></div>
-                        <h3>Fully Responsive</h3>
-                        <p class="lead mb-0">This theme will look great on any device, no matter the size!</p>
-                    </div>
+    <div class="container-counter">
+
+        <div class="row">
+
+            <div class="four col-md-3">
+                <div class="counter-box colored">
+                    <i class="fa fa-thumbs-o-up"></i>
+                    <span class="counter">2147</span>
+                    <p>Happy Customers</p>
                 </div>
-                <div class="col-lg-4">
-                    <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                        <div class="features-icons-icon d-flex"><i class="bi-layers m-auto text-primary"></i></div>
-                        <h3>Bootstrap 5 Ready</h3>
-                        <p class="lead mb-0">Featuring the latest build of the new Bootstrap 5 framework!</p>
-                    </div>
+            </div>
+            <div class="four col-md-3">
+                <div class="counter-box">
+                    <i class="fa fa-group"></i>
+                    <span class="counter">3275</span>
+                    <p>Registered Members</p>
                 </div>
-                <div class="col-lg-4">
-                    <div class="features-icons-item mx-auto mb-0 mb-lg-3">
-                        <div class="features-icons-icon d-flex"><i class="bi-terminal m-auto text-primary"></i></div>
-                        <h3>Easy to Use</h3>
-                        <p class="lead mb-0">Ready to use with your own content, or customize the source files!</p>
-                    </div>
+            </div>
+            <div class="four col-md-3">
+                <div class="counter-box">
+                    <i class="fa  fa-shopping-cart"></i>
+                    <span class="counter">289</span>
+                    <p>Available Products</p>
+                </div>
+            </div>
+            <div class="four col-md-3">
+                <div class="counter-box">
+                    <i class="fa  fa-user"></i>
+                    <span class="counter">1563</span>
+                    <p>Happy Customers</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     <!-- Image Showcases-->
     <section class="showcase">
         <div class="container-fluid p-0">
@@ -284,9 +392,18 @@
     <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    
+
 
     <!-- Include Choices JavaScript (latest) -->
     <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+   
+    <script src="js/jquery.min.js"></script>
+ <script src="js/jquery-ui.js"></script>
+
     <script>
         /* ==============================================
     CUSTOM SELECT
@@ -306,11 +423,73 @@
         }
     </script>
 
-    <script type="text/javascript">
-        $(function() {
-            $('#datetimepicker1').datetimepicker();
+    <script>
+        var clicks = 0;
+
+        function onClickAdd() {
+            clicks += 1;
+            document.getElementById("clicks").innerHTML = clicks;
+        };
+
+        function onClickRemove() {
+            if(document.getElementById("clicks").innerHTML > 0){
+                clicks -= 1;
+            document.getElementById("clicks").innerHTML = clicks;
+            }
+            
+        };
+
+        function reload() {
+            reload = location.reload();
+        }
+
+        $(document).ready(function() {
+
+            $('.counter').each(function() {
+                $(this).prop('Counter', 0).animate({
+                    Counter: $(this).text()
+                }, {
+                    duration: 4000,
+                    easing: 'swing',
+                    step: function(now) {
+                        $(this).text(Math.ceil(now));
+                    }
+                });
+            });
+
         });
     </script>
+
+
+<script>
+       $(".datepicker").datepicker({
+         minDate: ('+1d'),
+         dateFormat: 'dd/mm/yy',
+         beforeShowDay: function(date) {
+           var string = jQuery.datepicker.formatDate('yy-mm-dd', date);
+           var isEnabled = (EnableDates.indexOf(string) != -1 ); // used to enable if its a route
+            return [isEnabled];
+         }
+       });
+
+
+       var EnableDates = new Array(); // this array will store the routes dates after being extracted form the JSON
+     $.ajax({
+       url: 'js/routes-daysoff.json',//example jason
+       method: 'GET',
+       dataType: 'json',
+       success: function(data) {
+         // now the data is loaded and we will traverse over the "athens-aigina" 's route and create an array to of dates of routes
+         var listOfRoutes = data['athens-aigina'].routes;//here will be the var that comes from the destination inputs exp"athens-aigina" or "athens-thasos"
+         for (var i in listOfRoutes) {
+           EnableDates.push(listOfRoutes[i].date);// push the date to our array for checking afterwards
+         }
+
+       }
+     });
+    </script>
+	
+	
 </body>
 
 </html>
