@@ -1,72 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Landing Page - Start Bootstrap Theme</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" type="text/css" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway';
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    </head>
-    <body>
-            <!-- Navigation-->
+<body>
+    <!-- Navigation-->
     <nav class="navbar navbar-light bg-custom static-top">
         <div class="container">
 
@@ -92,66 +44,20 @@
                         <!-- To make this form functional, sign up at-->
                         <!-- https://startbootstrap.com/solution/contact-forms-->
                         <!-- to get an API token!-->
-                        <form class="form-subscribe" id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <!-- Email address input-->
-                            <div class="row">
-                                <div class="col">
-                                    <!-- <select class="form-select form-select-lg" aria-label="Default select example">
-                                        <option selected>Επιλογή ημερήσιας κρουαζιέρας</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select> -->
 
-                                    <input class="form-control form-control-lg" list="datalistOptions" id="exampleDataList" placeholder="Επιλογή ημερήσιας κρουαζιέρας" data-sb-can-submit="yes">
-                                    <datalist id="datalistOptions">
-                                        <option value="ΥΔΡΑ">
-                                        </option><option value="ΣΠΕΤΣΕΣ">
-                                        </option><option value="ΞΑΝΑ ΣΠΕΤΣΕΣ">
-                                        </option><option value="Los Angeles">
-                                        </option><option value="Chicago">
-                                    </option></datalist>
-
-                                   
-
-                                </div>
-                                <div class="col-auto"><button class="btn btn-primary btn-lg" id="submitButton" type="submit">Submit</button></div>
-                            </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage">
-                                <div class="text-center text-danger mb-3">Error sending message!</div>
-                            </div>
-                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-            <h3 style="margin-top:50px;">Address</h3>
-                <p>Σέκερη 37, Τολό 210 56 Ελλάδα</p>
-            <h3>Telephone</h3>
-                <p>+30 27520 59430</p>
-            <h3>Email</h3>
-                <p>sales@pegasus-cruises.gr</p>
-            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                 <input type="text" name="something">
-                 <button id="submitButton" type="submit">Submit</button>
-            </form>
+    <h3 style="margin-top:50px;">Address</h3>
+    <p>Σέκερη 37, Τολό 210 56 Ελλάδα</p>
+    <h3>Telephone</h3>
+    <p>+30 27520 59430</p>
+    <h3>Email</h3>
+    <p>sales@pegasus-cruises.gr</p>
 
-                <!-- Footer-->
+    <!-- Footer-->
     <footer class="footer bg-light">
         <div class="container">
             <div class="row">
@@ -192,5 +98,6 @@
     <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    </body>
+</body>
+
 </html>
