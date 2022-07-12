@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
 </head>
 
 <body>
@@ -31,67 +32,43 @@
     </nav>
     <!-- Masthead-->
     <header class="masthead">
-        <div class="container position-relative">
-            <div class="row justify-content-center">
-                <div class="col-xl-6">
-                    <div class="text-center text-white">
-                        <!-- Page heading-->
-                        <h1 class="mb-5">Generate more leads with a professional landing page!</h1>
-                        <!-- Signup form-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form class="form-subscribe" id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <!-- Email address input-->
-                            <div class="row">
-                                <div class="col">
-                                    <!-- <select class="form-select form-select-lg" aria-label="Default select example">
-                                        <option selected>Επιλογή ημερήσιας κρουαζιέρας</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select> -->
 
-                                    <input class="form-control form-control-lg" list="datalistOptions" id="exampleDataList" placeholder="Επιλογή ημερήσιας κρουαζιέρας">
-                                    <datalist id="datalistOptions">
-                                        <option value="ΥΔΡΑ">
-                                        <option value="ΣΠΕΤΣΕΣ">
-                                        <option value="ΞΑΝΑ ΣΠΕΤΣΕΣ">
-                                        <option value="Los Angeles">
-                                        <option value="Chicago">
-                                    </datalist>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card border-0">
+                        <div class="card-body p-0">
 
-                                   
-
-                                </div>
-                                <div class="col-auto"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
-                            </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage">
-                                <div class="text-center text-danger mb-3">Error sending message!</div>
-                            </div>
-                        </form>
+                            <!-- AUTO COMPLETE DROPDOWN -->
+                            <select class="selectpicker form-control border-2 mb-1 px-4 py-4 rounded shadow">
+                                <option value="ΥΔΡΑ">ΣΚΙΑΘΟΣ</option>
+                                <option value="ΣΠΕΤΣΕΣ">ΣΠΕΤΣΕΣ</option>
+                                <option value="ΞΑΝΑ ΣΠΕΤΣΕΣ">ΞΑΝΑ ΣΠΕΤΣΕΣ</option>
+                                <option value="Los Angeles">ΣΚΙΑΘΟΣ</option>
+                                <option value="Chicago">ΣΚΙΑΘΟΣ</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class='col-sm-6'>
+                        <div class="form-group">
+                            <div class='input-group date' id='datetimepicker1'>
+                                <input type='text' class="form-control" />
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
+
     </header>
     <!-- Icons Grid-->
     <section class="features-icons bg-light text-center">
@@ -225,33 +202,73 @@
         </div>
     </section>
     <!-- Footer-->
-    <footer class="footer bg-light">
+    <footer class="footer bg-custom">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
-                    <ul class="list-inline mb-2">
-                        <li class="list-inline-item"><a href="#!">About</a></li>
-                        <li class="list-inline-item">⋅</li>
-                        <li class="list-inline-item"><a href="#!">Contact</a></li>
-                        <li class="list-inline-item">⋅</li>
-                        <li class="list-inline-item"><a href="#!">Terms of Use</a></li>
-                        <li class="list-inline-item">⋅</li>
-                        <li class="list-inline-item"><a href="#!">Privacy Policy</a></li>
-                    </ul>
-                    <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2022. All Rights Reserved.</p>
+                <div class="col-lg-3 h-100 text-center text-white text-lg-start my-auto">
+                    <h4>PEGASUS</h4>
+                    <p class="text-muted small mb-4 mb-lg-0">
+                        Η εταιρεία PEGASUS CRUISES είναι μια καθιερωμένη, φιλική, οικογενειακή εταιρεία που εδρεύει στο ΤΟΛΟ προσφέροντας άνετες μονοήμερες κρουαζιέρες στα παραδοσιακά νησιά του Αργοσαρωνικού και στις Σποράδες (Ύδρα, Σπέτσες, Σκιάθος, Σκόπελος και άλλα).</p>
+
+                    <!-- <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2022. All Rights Reserved.</p> -->
                 </div>
-                <div class="col-lg-6 h-100 text-center text-lg-end my-auto">
+
+
+                <div class="col-lg-3 h-100 text-center text-white my-auto">
+                    <h4>ΜΕΝΟΥ</h4>
                     <ul class="list-inline mb-0">
-                        <li class="list-inline-item me-4">
-                            <a href="#!"><i class="bi-facebook fs-3"></i></a>
+                        <li>
+                            Πλοία
                         </li>
-                        <li class="list-inline-item me-4">
-                            <a href="#!"><i class="bi-twitter fs-3"></i></a>
+                        <li>
+                            Νέα
                         </li>
-                        <li class="list-inline-item">
-                            <a href="#!"><i class="bi-instagram fs-3"></i></a>
+                        <li>
+                            Εταιρεία
+                        </li>
+                        <li>
+                            Τρόποι Πληρωμής
+                        </li>
+                        <li>
+                            Πολιτική επιστροφών & ακυρώσεων
                         </li>
                     </ul>
+                </div>
+
+
+                <div class="col-lg-3 h-100 text-center text-white my-auto">
+                    <h4>ΠΡΟΟΡΙΣΜΟΙ</h4>
+                    <ul class="list-inline mb-0">
+                        <li>
+                            Σπέτσες
+                        </li>
+                        <li>
+                            Ύδρα
+                        </li>
+                        <li>
+                            Σκίαθος
+                        </li>
+                        <li>
+                            Αλόννησος
+                        </li>
+                        <li>
+                            Σκόπελος
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 h-100 text-center text-white text-lg-start my-auto">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/pegasusLogo.png" alt="Girl in a jacket" width="190" height="60">
+                    </a>
+                    <p class="text-muted small mb-4 mb-lg-0">Μονοήμερες Κρουαζιέρες Pegasus Cruises</p><br>
+                    <p class="text-muted small mb-4 mb-lg-0"> Διεύθυνση: Σέκερη 37, Τολό</p><br>
+                    <p class="text-muted small mb-4 mb-lg-0">Τηλέφωνο: +30 27520 59430, 59145, 58310 | +30 27520 59661</p><br>
+                    <p class="text-muted small mb-4 mb-lg-0">Email: sales@pegasus-cruises.gr</p>
+
+
+
+
+
                 </div>
             </div>
         </div>
@@ -265,6 +282,33 @@
     <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+    <!-- Include Choices JavaScript (latest) -->
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script>
+        /* ==============================================
+    CUSTOM SELECT
+  ============================================== */
+        const sorting = document.querySelector('.selectpicker');
+        const commentSorting = document.querySelector('.selectpicker');
+        const sortingchoices = new Choices(sorting, {
+            placeholder: false,
+            itemSelectText: ''
+        });
+
+
+        // Trick to apply your custom classes to generated dropdown menu
+        let sortingClass = sorting.getAttribute('class');
+        window.onload = function() {
+            sorting.parentElement.setAttribute('class', sortingClass);
+        }
+    </script>
+
+    <script type="text/javascript">
+        $(function() {
+            $('#datetimepicker1').datetimepicker();
+        });
+    </script>
 </body>
 
 </html>
