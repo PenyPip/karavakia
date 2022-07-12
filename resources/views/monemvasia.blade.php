@@ -2,70 +2,19 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Laravel</title>
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
-    <!-- Styles -->
-    <style>
-        html,
-        body {
-            background-color: #fff;
-            color: #636b6f;
-            font-family: 'Raleway';
-            font-weight: 100;
-            height: 100vh;
-            margin: 0;
-        }
-
-        .full-height {
-            height: 100vh;
-        }
-
-        .flex-center {
-            align-items: center;
-            display: flex;
-            justify-content: center;
-        }
-
-        .position-ref {
-            position: relative;
-        }
-
-        .top-right {
-            position: absolute;
-            right: 10px;
-            top: 18px;
-        }
-
-        .content {
-            text-align: center;
-        }
-
-        .title {
-            font-size: 84px;
-        }
-
-        .links>a {
-            color: #636b6f;
-            padding: 0 25px;
-            font-size: 12px;
-            font-weight: 600;
-            letter-spacing: .1rem;
-            text-decoration: none;
-            text-transform: uppercase;
-        }
-
-        .m-b-md {
-            margin-bottom: 30px;
-        }
-    </style>
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Landing Page - Start Bootstrap Theme</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" type="text/css" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -80,7 +29,7 @@
             <a class="btn btn-primary" href="#signup">Sign Up</a>
         </div>
     </nav>
-    <header class="masthead" style="background: url(http://127.0.0.1:8000/images/spetses-pegasus-cruises.jpg);">
+    <header class="masthead" style="background: url(http://127.0.0.1:8000/images/spetses-pegasus-cruises.jpg); background-size:cover;">
         <div class="container position-relative">
             <div class="row justify-content-center">
                 <div class="col-xl-6">
@@ -148,11 +97,8 @@
             </div>
         </div>
     </header>
-    <p>Monemvasia is carved into the rock like a sculpture. It’s also know as “Givraltar of the East” and as the greek poet’s Giannis Ritsos’ “rock ship”. Ritsos was born here. Monemvasia invites you into a journey through time, to wonder through the uniquely preserved medieval settlement with its arched alleys, the churches and the mansions. Swim in the dreamy sea, enjoy the beaches and the modern facilities, and don’t forget to taste the local wine.</p>
-    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-        <input type="text" name="something">
-        <button id="submitButton" type="submit">Submit</button>
-    </form>
+    <p style="margin:250px; margin-top:50px; margin-bottom:50px;">Monemvasia is carved into the rock like a sculpture. It’s also know as “Givraltar of the East” and as the greek poet’s Giannis Ritsos’ “rock ship”. Ritsos was born here. Monemvasia invites you into a journey through time, to wonder through the uniquely preserved medieval settlement with its arched alleys, the churches and the mansions. Swim in the dreamy sea, enjoy the beaches and the modern facilities, and don’t forget to taste the local wine.</p>
+
 
     <!-- Footer-->
     <footer class="footer bg-light">
