@@ -4519,7 +4519,7 @@ textarea.form-control-lg {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color: #ffffff5c;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
@@ -11314,6 +11314,18 @@ textarea.form-control-lg {
   font-size: 4.5rem;
 }
 
+header.passengerDetails {
+  position: relative;
+  background-color: #343a40;
+  background-size: cover;
+  padding-top: 8rem;
+  padding-bottom: 8rem; 
+
+  min-height:100%;
+  background:linear-gradient(0deg, rgba(73, 95, 176, 0.3), rgba(0, 72, 150, 0.3)), url("../images/spetses-pegasus-cruises.jpg");
+  background-size:cover;
+}
+
 header.searchbox {
   position: relative;
   background-color: #343a40;
@@ -11361,6 +11373,11 @@ header.masthead h1, header.masthead .h1 {
     padding-bottom: 35rem;
   }
 }
+header.passengerDetails{
+  padding-top: 12rem;
+  padding-bottom: 7rem;
+}
+
 
 .showcase .showcase-text {
   padding: 3rem;

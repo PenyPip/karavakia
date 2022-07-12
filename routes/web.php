@@ -21,6 +21,9 @@ Route::get('/search', function () {
 Route::get('/homeSearch', function () {
    return view('homeSearch');
 });
+Route::get('/passengerDetails', function () {
+    return view('passengerDetails');
+ });
 
 Route::get('/contact-us', function () {
    return view('contact-us');
