@@ -87,10 +87,10 @@
                 <img src="images/pegasusLogo.png" alt="Girl in a jacket" width="190" height="60">
             </a>
             <nav class="navbar navbar-light">
-                <a class="navbar-brand" href="#" style="color: #fff; font-size: 15px;">HOME</a>
+                <a class="navbar-brand" href="/homesearch" style="color: #fff; font-size: 15px;">HOME</a>
             </nav>
             <nav class="navbar navbar-light">
-                <a class="navbar-brand" href="#" style="color: #fff; font-size: 15px;">CRUISES</a>
+                <a class="navbar-brand" href="/passengerDetails" style="color: #fff; font-size: 15px;">CRUISES</a>
             </nav>
             <nav class="navbar navbar-light">
                 <a class="navbar-brand" href="#" style="color: #fff; font-size: 15px;">DESTINATIONS</a>
