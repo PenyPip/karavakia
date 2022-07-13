@@ -24,8 +24,28 @@
 
             <a class="navbar-brand" href="#">
                 <img src="images/pegasusLogo.png" alt="Girl in a jacket" width="190" height="60">
-
             </a>
+            <nav class="navbar navbar-light">
+                <a class="navbar-brand" href="#" style="color: #fff; font-size: 15px;">HOME</a>
+            </nav>
+            <nav class="navbar navbar-light">
+                <a class="navbar-brand" href="#" style="color: #fff; font-size: 15px;">CRUISES</a>
+            </nav>
+            <nav class="navbar navbar-light">
+                <a class="navbar-brand" href="#" style="color: #fff; font-size: 15px;">DESTINATIONS</a>
+            </nav>
+            <nav class="navbar navbar-light">
+                <a class="navbar-brand" href="#" style="color: #fff; font-size: 15px;">INFORMATION</a>
+            </nav>
+            <nav class="navbar navbar-light">
+                <a class="navbar-brand" href="#" style="color: #fff; font-size: 15px;">SHIPS</a>
+            </nav>
+            <nav class="navbar navbar-light">
+                <a class="navbar-brand" href="#" style="color: #fff; font-size: 15px;">NEWS</a>
+            </nav>
+            <nav class="navbar navbar-light">
+                <a class="navbar-brand" href="#" style="color: #fff; font-size: 15px;">CONTACT</a>
+            </nav>
             <a class="btn btn-primary" href="#signup">Sign Up</a>
         </div>
     </nav>
@@ -62,7 +82,7 @@
                     <ul class="list-inline mb-2">
                         <li class="list-inline-item"><a href="#!">About</a></li>
                         <li class="list-inline-item">⋅</li>
-                        <li class="list-inline-item"><a href="#!">Contact</a></li>
+                        <li class="list-inline-item"><a href="/contact-us">Contact</a></li>
                         <li class="list-inline-item">⋅</li>
                         <li class="list-inline-item"><a href="#!">Terms of Use</a></li>
                         <li class="list-inline-item">⋅</li>

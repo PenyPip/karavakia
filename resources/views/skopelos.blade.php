@@ -24,8 +24,28 @@
 
             <a class="navbar-brand" href="#">
                 <img src="images/pegasusLogo.png" alt="Girl in a jacket" width="190" height="60">
-
             </a>
+            <nav class="navbar navbar-light">
+                <a class="navbar-brand" href="#" style="color: #fff; font-size: 15px;">HOME</a>
+            </nav>
+            <nav class="navbar navbar-light">
+                <a class="navbar-brand" href="#" style="color: #fff; font-size: 15px;">CRUISES</a>
+            </nav>
+            <nav class="navbar navbar-light">
+                <a class="navbar-brand" href="#" style="color: #fff; font-size: 15px;">DESTINATIONS</a>
+            </nav>
+            <nav class="navbar navbar-light">
+                <a class="navbar-brand" href="#" style="color: #fff; font-size: 15px;">INFORMATION</a>
+            </nav>
+            <nav class="navbar navbar-light">
+                <a class="navbar-brand" href="#" style="color: #fff; font-size: 15px;">SHIPS</a>
+            </nav>
+            <nav class="navbar navbar-light">
+                <a class="navbar-brand" href="#" style="color: #fff; font-size: 15px;">NEWS</a>
+            </nav>
+            <nav class="navbar navbar-light">
+                <a class="navbar-brand" href="#" style="color: #fff; font-size: 15px;">CONTACT</a>
+            </nav>
             <a class="btn btn-primary" href="#signup">Sign Up</a>
         </div>
     </nav>
@@ -55,10 +75,6 @@
 
         The town of Skopelos has been characterized by a presidential decree in 1978 as a traditional settlement mostly because of its architecture which is a mixture of various architectural styles and it gives the town a royal aspect. Getting to know Skopelos is a joy for each visitor. History is alive and the combination of nature and history makes this island much more than a tourist attraction.
     </p>
-    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-        <input type="text" name="something">
-        <button id="submitButton" type="submit">Submit</button>
-    </form>
 
     <!-- Footer-->
     <footer class="footer bg-light">
@@ -68,7 +84,7 @@
                     <ul class="list-inline mb-2">
                         <li class="list-inline-item"><a href="#!">About</a></li>
                         <li class="list-inline-item">⋅</li>
-                        <li class="list-inline-item"><a href="#!">Contact</a></li>
+                        <li class="list-inline-item"><a href="/contact-us">Contact</a></li>
                         <li class="list-inline-item">⋅</li>
                         <li class="list-inline-item"><a href="#!">Terms of Use</a></li>
                         <li class="list-inline-item">⋅</li>

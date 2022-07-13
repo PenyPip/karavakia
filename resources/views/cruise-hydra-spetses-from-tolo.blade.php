@@ -92,6 +92,8 @@
         </div>
 
     </div>
+
+    <!-- Footer-->
     <footer class="footer bg-light">
         <div class="container">
             <div class="row">
