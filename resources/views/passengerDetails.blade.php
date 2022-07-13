@@ -33,17 +33,15 @@
                                     <option value="andorran">Andorran</option>
                                     <option value="angolan">Angolan</option>
                                     <option value="antiguans">Antiguans</option>
-                                    <option value="argentinean">Argentinean</option>
-                                    <option value="armenian">Armenian</option>
-                                    <option value="australian">Australian</option>
-                                    <option value="austrian">Austrian</option>
-                                    <option value="azerbaijani">Azerbaijani</option>
-                                    <option value="bahamian">Bahamian</option>
-                                    <option value="bahraini">Bahraini</option>
-                                    <option value="bangladeshi">Bangladeshi</option>
-                                    <option value="barbadian">Barbadian</option>
                                 </select>
                             </div>
+
+                            <div class="form-group has-success mb-4">
+                                <p class="form-control  datepicker " placeholder="'Ονομα" name="name" value="" type="text" required>
+
+                                    <button class="btn btn-transparent" type="button"><i class="fa fa-calendar"></i> <input type="text" class="datepicker" placeholder="Ημερομηνία γέννησης"></button>
+                            </div>
+
                             <div class="form-group has-success mb-4">
                                 <input class="form-control input-lg" placeholder="Email " name="email" type="text" required>
                             </div>
@@ -56,35 +54,66 @@
                     </div>
                 </div>
                 <!-- total cost card -->
-                <div class="col-lg-4 mx-auto">
+                <div class="col-lg-6 mx-auto">
                     <h2 class="text-center text-custom mb-4">Υπολογισμός Ταξιδίου</h2>
-
                     <div class="card">
-                        <img class="card-img-top" src="images/nauplio1.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Εκδρομή - Ναύπλιο</h5>
+                        <div class="paddingDiv">
+
+                            <img class="card-img-top" src="images/nauplio1.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Εκδρομή - Ναύπλιο</h5>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex w-100 justify-content-between">
+                                    <p class="mt-1">Εισιτήρια ενηλίκων</p>
+                                    <div class="row">
+                                        <button type="button" class="btn btn-custom btn-circle btn-sm px-2" onClick="onClickAdd()"><i class="fa fa-plus"></i> </button>
+                                        <button class="btn btn-custom btn-circle btn-sm"><a id="clicks">0</a></button>
+                                        <button type="button" class="btn btn-custom btn-circle btn-sm px-2" onClick="onClickRemove()"><i class="fa fa-minus"></i> </button>
+
+                                    </div><button type="button" class="btn btn-success btn-sm">50$</button>
+                                </li>
+                                <li class="list-group-item d-flex w-100 justify-content-between">
+                                    <p class="mt-1">Εισιτήρια ανηλίκων</p>
+                                    <div class="row">
+                                        <button type="button" class="btn btn-custom btn-circle btn-sm px-2" onClick="onClickAdd2()"><i class="fa fa-plus"></i> </button>
+                                        <button class="btn btn-custom btn-circle btn-sm"><a id="clicks2">0</a></button>
+                                        <button type="button" class="btn btn-custom btn-circle btn-sm px-2" onClick="onClickRemove2()"><i class="fa fa-minus"></i> </button>
+
+                                    </div><button type="button" class="btn btn-success btn-sm">50$</button>
+                                </li>                                
+                                <li class="list-group-item d-flex w-100 justify-content-between">
+                                    <p class="mt-1">Εισιτήρια φοιτητών</p>
+                                    <div class="row">
+                                        <button type="button" class="btn btn-custom btn-circle btn-sm px-2" onClick="onClickAdd3()"><i class="fa fa-plus"></i> </button>
+                                        <button class="btn btn-custom btn-circle btn-sm"><a id="clicks3">0</a></button>
+                                        <button type="button" class="btn btn-custom btn-circle btn-sm px-2" onClick="onClickRemove3()"><i class="fa fa-minus"></i> </button>
+
+                                    </div><button type="button" class="btn btn-success btn-sm">50$</button>
+                                </li>
+                            </ul>
+                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start mt-4 ">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mt-2">Συνολικό κόστος:</h5>
+                                    <div>
+                                        <button type="button" class="btn btn-success btn-sm">105$</button>
+                                        <button type="button" class="btn btn-danger btn-sm">Πληρωμή</button>
+                                    </div>
+
+
+                                </div>
+                                <div class="d-flex w-100 justify-content-between">
+
+                                    <p class="mb-1"></p>
+                                </div>
+                            </a>
+
                         </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item d-flex w-100 justify-content-between">Εισιτήρια ενηλίκων x 2 <button type="button" class="btn btn-success btn-sm">50$</button></li>
-                            <li class="list-group-item d-flex w-100 justify-content-between">Εισιτήρια ανηλίκων x 2<button type="button" class="btn btn-success btn-sm">40$</button></li>
-                            <li class="list-group-item d-flex w-100 justify-content-between">Εισιτήρια φοιτητών x 1<button type="button" class="btn btn-success btn-sm">15$</button></li>
-
-                        </ul>
-                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start mt-4 ">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">Συνολικό κόστος</h5>
-                                <button type="button" class="btn btn-success btn-sm">105$</button>
-                            </div>
-                            <div class="d-flex w-100 justify-content-between">
-                                <p class="mb-1"></p>
-                            </div>
-                        </a>
-
                     </div>
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row" id="clicks">
                 <div class="col-lg-6 ml-4">
 
                     <div class="card card-body  ">
@@ -120,6 +149,12 @@
                                 </select>
                             </div>
 
+                            <div class="form-group has-success mb-4">
+                                <p class="form-control  datepicker " placeholder="'Ονομα" name="name" value="" type="text" required>
+
+                                    <button class="btn btn-transparent" type="button"><i class="fa fa-calendar"></i> <input type="text" class="datepicker" placeholder="Ημερομηνία γέννησης"></button>
+                            </div>
+
                         </fieldset>
                     </div>
                 </div>
@@ -133,6 +168,122 @@
 </body>
 
 @include('layouts.footer')
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+
+
+
+<!-- Include Choices JavaScript (latest) -->
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+
+<script>
+   /* A datepicker that is only enabled on certain dates. */
+    $(".datepicker").datepicker({
+        minDate: ('+1d'),
+        dateFormat: 'dd/mm/yy',
+        beforeShowDay: function(date) {
+            var string = jQuery.datepicker.formatDate('yy-mm-dd', date);
+            var isEnabled = (EnableDates.indexOf(string) != -1); // used to enable if its a route
+            return [isEnabled];
+        },
+        changeMonth: true,
+        changeYear: true
+    });
+
+
+    var EnableDates = new Array(); // this array will store the routes dates after being extracted form the JSON
+    $.ajax({
+        url: 'js/routes-daysoff.json', //example jason
+        method: 'GET',
+        dataType: 'json',
+        success: function(data) {
+            // now the data is loaded and we will traverse over the "athens-aigina" 's route and create an array to of dates of routes
+            var listOfRoutes = data['athens-aigina'].routes; //here will be the var that comes from the destination inputs exp"athens-aigina" or "athens-thasos"
+            for (var i in listOfRoutes) {
+                EnableDates.push(listOfRoutes[i].date); // push the date to our array for checking afterwards
+            }
+
+        }
+    });
+
+
+/**
+ * The function onClickAdd() adds 1 to the variable clicks and displays the result in the HTML element
+ * with the id of clicks
+ */
+    var clicks = 0;
+
+    function onClickAdd() {
+        if(clicks+clicks2+clicks3<= 6){
+            clicks += 1;
+        document.getElementById("clicks").innerHTML = clicks;
+        }
+        
+    };
+
+    function onClickRemove() {
+        if (document.getElementById("clicks").innerHTML > 0  ) {
+            clicks -= 1;
+            document.getElementById("clicks").innerHTML = clicks;
+        }
+
+    };
+/**
+ * It adds and removes clicks from the HTML element with the id of "clicks2".
+ */
+    var clicks2 = 0;
+
+    function onClickAdd2() {
+        if(clicks+clicks2+clicks3<= 6){
+        clicks2 += 1;
+        document.getElementById("clicks2").innerHTML = clicks2;
+        }
+    };
+
+    function onClickRemove2() {
+        if (document.getElementById("clicks2").innerHTML > 0) {
+            clicks2 -= 1;
+            document.getElementById("clicks2").innerHTML = clicks2;
+        }
+
+    };
+
+/**
+ * It adds and removes clicks from the HTML element with the id of "clicks3".
+ */
+    var clicks3 = 0;
+
+    function onClickAdd3() {
+        if(clicks+clicks2+clicks3<= 6){
+        clicks3 += 1;
+        document.getElementById("clicks3").innerHTML = clicks3;
+        }
+    };
+
+    function onClickRemove3() {
+        if (document.getElementById("clicks3").innerHTML > 0) {
+            clicks3 -= 1;
+            document.getElementById("clicks3").innerHTML = clicks3;
+        }
+
+    };
+</script>
+
+<script>
+/**
+ * If the element with the id of "clicks" is not displayed, display it. If it is displayed, hide it
+ */
+function myFunction() {
+  var x = document.getElementById("clicks");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
 
 </html>

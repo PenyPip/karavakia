@@ -11,7 +11,7 @@
         <div class="container ">
             <h1 class="text-center text-custom">Αναζήτηση ημερήσιας κρουαζιέρας</h2>
                 <div class="row mb-2">
-                    <div class="col-lg-8">
+                    <div class="col-md-6 offset-md-3">
                         <div class="card border-0">
                             <div class="card-body p-0">
 
@@ -26,27 +26,28 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                   
+                </div>
+                <div class="row mb-2 ">
+                    <!-- <div class="col-lg-8">
+                        <div class="card border-0">
+                            <div class="card-body p-0">
+                                <select class="form-select form-select-lg" aria-label=".form-select-lg example">
+                                    <option selected>Επιλογή κατηγορίας επιβάτη</option>
+                                    <option value="1">Ενήλικος  25$</option>
+                                    <option value="2">Ανήλικος  15$</option>
+                                    <option value="3">Φοιτητής  18$</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="col-md-6 offset-md-3 mb-2">
                         <div class="d-grid gap-2">
                             <button class="btn-lg btn-light" type="button" disabled><i class="fa fa-calendar"></i> <input type="text" class="datepicker" placeholder="Επιλέξτε ημερομηνία"></button>
 
                         </div>
                     </div>
-                </div>
-                <div class="row mb-2">
-                    <div class="col-lg-8">
-                        <div class="card border-0">
-                            <div class="card-body p-0">
-                                <select class="form-select form-select-lg" aria-label=".form-select-lg example">
-                                    <option selected>Επιλογή κατηγορίας επιβάτη</option>
-                                    <option value="1">Ενήλικος --> 25$</option>
-                                    <option value="2">Ανήλικος --> 15$</option>
-                                    <option value="3">Φοιτητής --> 18$</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-2">
+                    <div class="col-md-6 offset-md-3">
                         <div class="card border-0">
                             <div class="card-body p-0">
                             <div class="d-grid gap-2">
@@ -59,7 +60,7 @@
                     
                 </div>
           
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-lg-4">
                         <div class="d-grid gap-2">
                             <button class="btn-lg btn-light" type="button" disabled>Προσθήκη εισητηρίου</button>
@@ -77,7 +78,7 @@
 
 
 
-                </div>
+                </div> -->
 
 
         </div>
@@ -309,7 +310,9 @@
            var string = jQuery.datepicker.formatDate('yy-mm-dd', date);
            var isEnabled = (EnableDates.indexOf(string) != -1 ); // used to enable if its a route
             return [isEnabled];
-         }
+         },
+         changeMonth: true,
+         changeYear: true
        });
 
 

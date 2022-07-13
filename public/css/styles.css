@@ -3214,6 +3214,16 @@ textarea.form-control-lg {
   border-color: #dc3545;
 }
 
+.btn-transparent {
+  color: #000;
+  background-color: #f8f9fa00;
+  border-color: #f8f9fa00;
+}
+.btn-transparent:disabled, .btn-transparent.disabled {
+  color: #000;
+  background-color: #f8f9fa00;
+  border-color: #f8f9fa00;
+}
 .btn-light {
   color: #000;
   background-color: #f8f9fa;
@@ -11426,4 +11436,11 @@ header.passengerDetails{
 footer.footer {
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+
+.paddingDiv{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }

@@ -28,7 +28,15 @@
             text-align: center;
             margin-right: 10px;
         }
-
+        .btn-circle.btn-sm {
+            width: 40px;
+            height: 40px;
+            padding: 13px 13px 13px 13px;
+            border-radius: 60px;
+            font-size: 15px;
+            text-align: center;
+            margin-right: 10px;
+        }
         .container-counter {
             margin-top: 100px;
             margin-bottom: 100px;
