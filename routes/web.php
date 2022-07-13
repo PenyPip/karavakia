@@ -22,39 +22,39 @@ Route::get('/homeSearch', function () {
    return view('homeSearch');
 });
 Route::get('/passengerDetails', function () {
-    return view('passengerDetails');
- });
+   return view('passengerDetails');
+});
 
 Route::get('/contact-us', function () {
-   return view('contact-us');
+   return view('layouts/destinations/contact-us');
 });
 
 Route::get('/hydra', function () {
-   return view('hydra');
+   return view('layouts/destinations/hydra');
 });
 
 Route::get('/spetses', function () {
-   return view('spetses');
+   return view('layouts/destinations/spetses');
 });
 
 Route::get('/skiathos', function () {
-   return view('skiathos');
+   return view('layouts/destinations/skiathos');
 });
 
 Route::get('/skopelos', function () {
-   return view('skopelos');
+   return view('layouts/destinations/skopelos');
 });
 
 Route::get('/alonissos', function () {
-   return view('alonissos');
+   return view('layouts/destinations/alonissos');
 });
 
 Route::get('/monemvasia', function () {
-   return view('monemvasia');
+   return view('layouts/destinations/monemvasia');
 });
 
 Route::get('/navigationWithPages', function () {
-   return view('navigationWithPages');
+   return view('layouts/destinations/navigationWithPages');
 });
 
 Route::get('/booking-payment', function () {
