@@ -56,3 +56,15 @@ Route::get('/monemvasia', function () {
 Route::get('/navigationWithPages', function () {
    return view('navigationWithPages');
 });
+
+Route::get('/booking-payment', function () {
+   return view('booking-payment');
+});
+
+Route::get('/cruise-hydra-spetses-from-tolo', function () {
+   return view('cruise-hydra-spetses-from-tolo');
+});
+
+Route::get('/cruise-skiathos-koukounaries-from-glyfa', function () {
+   return view('cruise-skiathos-koukounaries-from-glyfa');
+});
