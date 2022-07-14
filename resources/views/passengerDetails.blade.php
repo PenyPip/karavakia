@@ -81,7 +81,7 @@
                                         <button type="button" class="btn btn-custom btn-circle btn-sm px-2" onClick="onClickRemove2()"><i class="fa fa-minus"></i> </button>
 
                                     </div><button type="button" class="btn btn-success btn-sm">50$</button>
-                                </li>                                
+                                </li>
                                 <li class="list-group-item d-flex w-100 justify-content-between">
                                     <p class="mt-1">Εισιτήρια φοιτητών</p>
                                     <div class="row">
@@ -114,8 +114,7 @@
             </div>
 
             <div class="row" id="clicks">
-                <div class="col-lg-6 ml-4">
-
+                <div class="col-lg-6 ml-4 d-none" id="displayCard">
                     <div class="card card-body  ">
                         <h3 class="text-center mb-4">Επιβάτης 2 </h3>
 
@@ -160,6 +159,51 @@
                 </div>
 
             </div>
+            <div class="col-lg-6 ml-4 d-none" id="displayCard2">
+                <div class="card card-body  ">
+                    <h3 class="text-center mb-4">Επιβάτης 3 </h3>
+
+                    <fieldset>
+                        <div class="form-group has-error mb-4">
+                            <input class="form-control input-lg" placeholder="Eπώνυμο" name="lastname" value="" type="text" required>
+                        </div>
+                        <div class="form-group has-success mb-4">
+                            <input class="form-control input-lg" placeholder="'Ονομα" name="name" value="" type="text" required>
+                        </div>
+
+                        <div class="form-group mb-4">
+                            <select class="form-control input-lg">
+                                <option selected="">--Εθνικότητα</option>
+                                <option value="afghan">Afghan</option>
+                                <option value="albanian">Albanian</option>
+                                <option value="algerian">Algerian</option>
+                                <option value="american">American</option>
+                                <option value="andorran">Andorran</option>
+                                <option value="angolan">Angolan</option>
+                                <option value="antiguans">Antiguans</option>
+                                <option value="argentinean">Argentinean</option>
+                                <option value="armenian">Armenian</option>
+                                <option value="australian">Australian</option>
+                                <option value="austrian">Austrian</option>
+                                <option value="azerbaijani">Azerbaijani</option>
+                                <option value="bahamian">Bahamian</option>
+                                <option value="bahraini">Bahraini</option>
+                                <option value="bangladeshi">Bangladeshi</option>
+                                <option value="barbadian">Barbadian</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group has-success mb-4">
+                            <p class="form-control  datepicker " placeholder="'Ονομα" name="name" value="" type="text" required>
+
+                                <button class="btn btn-transparent" type="button"><i class="fa fa-calendar"></i> <input type="text" class="datepicker" placeholder="Ημερομηνία γέννησης"></button>
+                        </div>
+
+                    </fieldset>
+                </div>
+            </div>
+
+        </div>
         </div>
 
 
@@ -180,7 +224,7 @@
 <script src="js/jquery-ui.js"></script>
 
 <script>
-   /* A datepicker that is only enabled on certain dates. */
+    /* A datepicker that is only enabled on certain dates. */
     $(".datepicker").datepicker({
         minDate: ('+1d'),
         dateFormat: 'dd/mm/yy',
@@ -210,36 +254,75 @@
     });
 
 
-/**
- * The function onClickAdd() adds 1 to the variable clicks and displays the result in the HTML element
- * with the id of clicks
- */
+    /**
+     * The function onClickAdd() adds 1 to the variable clicks and displays the result in the HTML element
+     * with the id of clicks
+     */
     var clicks = 0;
 
     function onClickAdd() {
-        if(clicks+clicks2+clicks3<= 6){
+        if (clicks + clicks2 + clicks3 <= 6) {
             clicks += 1;
-        document.getElementById("clicks").innerHTML = clicks;
-        }
-        
-    };
-
-    function onClickRemove() {
-        if (document.getElementById("clicks").innerHTML > 0  ) {
-            clicks -= 1;
             document.getElementById("clicks").innerHTML = clicks;
         }
+        if (clicks + clicks2 + clicks3 == 1 ) {
+            var x = document.getElementById("displayCard");
+
+            x.classList.remove("col-lg-6", "ml-4", "d-none");
+            x.classList.add("col-lg-6", "ml-4","mb-4");
+            console.log(x);
+
+
+
+        } else if (clicks + clicks2 + clicks3 ==2 ) {
+            
+
+            var y = document.getElementById("displayCard2");
+            y.classList.remove("col-lg-6", "ml-4", "d-none");
+            y.classList.add("col-lg-6", "ml-4","mb-4");
+            console.log(y);
+        }
+    }
+
+
+
+    ;
+
+    function onClickRemove() {
+        if (document.getElementById("clicks").innerHTML > 0) {
+            clicks -= 1;
+            document.getElementById("clicks").innerHTML = clicks;
+            
+        }
+
+        if (clicks + clicks2 + clicks3 == 1 ) {
+            var x = document.getElementById("displayCard");
+
+            x.classList.remove("col-lg-6", "ml-4");
+            x.classList.add("col-lg-6", "ml-4" , "d-none");
+            console.log(x);
+
+
+
+        } else if (clicks + clicks2 + clicks3 <=2 ) {
+            
+
+            var y = document.getElementById("displayCard2");
+            y.classList.remove("col-lg-6", "ml-4");
+            y.classList.add("col-lg-6", "ml-4", "d-none");
+            console.log(y);
+        }
 
     };
-/**
- * It adds and removes clicks from the HTML element with the id of "clicks2".
- */
+    /**
+     * It adds and removes clicks from the HTML element with the id of "clicks2".
+     */
     var clicks2 = 0;
 
     function onClickAdd2() {
-        if(clicks+clicks2+clicks3<= 6){
-        clicks2 += 1;
-        document.getElementById("clicks2").innerHTML = clicks2;
+        if (clicks + clicks2 + clicks3 <= 6) {
+            clicks2 += 1;
+            document.getElementById("clicks2").innerHTML = clicks2;
         }
     };
 
@@ -251,15 +334,15 @@
 
     };
 
-/**
- * It adds and removes clicks from the HTML element with the id of "clicks3".
- */
+    /**
+     * It adds and removes clicks from the HTML element with the id of "clicks3".
+     */
     var clicks3 = 0;
 
     function onClickAdd3() {
-        if(clicks+clicks2+clicks3<= 6){
-        clicks3 += 1;
-        document.getElementById("clicks3").innerHTML = clicks3;
+        if (clicks + clicks2 + clicks3 <= 6) {
+            clicks3 += 1;
+            document.getElementById("clicks3").innerHTML = clicks3;
         }
     };
 
@@ -273,17 +356,28 @@
 </script>
 
 <script>
-/**
- * If the element with the id of "clicks" is not displayed, display it. If it is displayed, hide it
- */
-function myFunction() {
-  var x = document.getElementById("clicks");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
+    /**
+     * If the element with the id of "clicks" is not displayed, display it. If it is displayed, hide it
+     */
+    function displayCardFunction() {
+        if (clicks + clicks2 + clicks3 == 1 ) {
+            var x = document.getElementById("displayCard");
+
+            x.classList.remove("col-lg-6", "ml-4", "d-none");
+            x.classList.add("col-lg-6", "ml-4");
+            console.log(x);
+
+
+
+        } else if (clicks + clicks2 + clicks3 ==2 ) {
+            
+
+            var y = document.getElementById("displayCard2");
+            y.classList.remove("col-lg-6", "ml-4", "d-none");
+            y.classList.add("col-lg-6", "ml-4");
+            console.log(y);
+        }
+    }
 </script>
 
 </html>
