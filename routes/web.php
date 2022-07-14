@@ -46,7 +46,7 @@ Route::get('/skopelos', function () {
 });
 
 Route::get('/alonissos', function () {
-   return view('alonissos');
+   return view('layouts/destinations/alonissos');
 });
 
 Route::get('/monemvasia', function () {
