@@ -202,6 +202,92 @@
                     </fieldset>
                 </div>
             </div>
+            <div class="col-lg-6 ml-4 d-none" id="displayCard3">
+                <div class="card card-body  ">
+                    <h3 class="text-center mb-4">Επιβάτης 4 </h3>
+
+                    <fieldset>
+                        <div class="form-group has-error mb-4">
+                            <input class="form-control input-lg" placeholder="Eπώνυμο" name="lastname" value="" type="text" required>
+                        </div>
+                        <div class="form-group has-success mb-4">
+                            <input class="form-control input-lg" placeholder="'Ονομα" name="name" value="" type="text" required>
+                        </div>
+
+                        <div class="form-group mb-4">
+                            <select class="form-control input-lg">
+                                <option selected="">--Εθνικότητα</option>
+                                <option value="afghan">Afghan</option>
+                                <option value="albanian">Albanian</option>
+                                <option value="algerian">Algerian</option>
+                                <option value="american">American</option>
+                                <option value="andorran">Andorran</option>
+                                <option value="angolan">Angolan</option>
+                                <option value="antiguans">Antiguans</option>
+                                <option value="argentinean">Argentinean</option>
+                                <option value="armenian">Armenian</option>
+                                <option value="australian">Australian</option>
+                                <option value="austrian">Austrian</option>
+                                <option value="azerbaijani">Azerbaijani</option>
+                                <option value="bahamian">Bahamian</option>
+                                <option value="bahraini">Bahraini</option>
+                                <option value="bangladeshi">Bangladeshi</option>
+                                <option value="barbadian">Barbadian</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group has-success mb-4">
+                            <p class="form-control  datepicker " placeholder="'Ονομα" name="name" value="" type="text" required>
+
+                                <button class="btn btn-transparent" type="button"><i class="fa fa-calendar"></i> <input type="text" class="datepicker" placeholder="Ημερομηνία γέννησης"></button>
+                        </div>
+
+                    </fieldset>
+                </div>
+            </div>
+            <div class="col-lg-6 ml-4 d-none" id="displayCard4">
+                <div class="card card-body  ">
+                    <h3 class="text-center mb-4">Επιβάτης 5 </h3>
+
+                    <fieldset>
+                        <div class="form-group has-error mb-4">
+                            <input class="form-control input-lg" placeholder="Eπώνυμο" name="lastname" value="" type="text" required>
+                        </div>
+                        <div class="form-group has-success mb-4">
+                            <input class="form-control input-lg" placeholder="'Ονομα" name="name" value="" type="text" required>
+                        </div>
+
+                        <div class="form-group mb-4">
+                            <select class="form-control input-lg">
+                                <option selected="">--Εθνικότητα</option>
+                                <option value="afghan">Afghan</option>
+                                <option value="albanian">Albanian</option>
+                                <option value="algerian">Algerian</option>
+                                <option value="american">American</option>
+                                <option value="andorran">Andorran</option>
+                                <option value="angolan">Angolan</option>
+                                <option value="antiguans">Antiguans</option>
+                                <option value="argentinean">Argentinean</option>
+                                <option value="armenian">Armenian</option>
+                                <option value="australian">Australian</option>
+                                <option value="austrian">Austrian</option>
+                                <option value="azerbaijani">Azerbaijani</option>
+                                <option value="bahamian">Bahamian</option>
+                                <option value="bahraini">Bahraini</option>
+                                <option value="bangladeshi">Bangladeshi</option>
+                                <option value="barbadian">Barbadian</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group has-success mb-4">
+                            <p class="form-control  datepicker " placeholder="'Ονομα" name="name" value="" type="text" required>
+
+                                <button class="btn btn-transparent" type="button"><i class="fa fa-calendar"></i> <input type="text" class="datepicker" placeholder="Ημερομηνία γέννησης"></button>
+                        </div>
+
+                    </fieldset>
+                </div>
+            </div>
 
         </div>
         </div>
@@ -270,7 +356,6 @@
 
             x.classList.remove("col-lg-6", "ml-4", "d-none");
             x.classList.add("col-lg-6", "ml-4","mb-4");
-            console.log(x);
 
 
 
@@ -280,7 +365,20 @@
             var y = document.getElementById("displayCard2");
             y.classList.remove("col-lg-6", "ml-4", "d-none");
             y.classList.add("col-lg-6", "ml-4","mb-4");
-            console.log(y);
+        }
+        else if (clicks + clicks2 + clicks3 ==3 ) {
+            
+
+            var t = document.getElementById("displayCard3");
+            t.classList.remove("col-lg-6", "ml-4", "d-none");
+            t.classList.add("col-lg-6", "ml-4","mb-4");
+        }
+        else if (clicks + clicks2 + clicks3 ==4 ) {
+            
+
+            var z = document.getElementById("displayCard4");
+            z.classList.remove("col-lg-6", "ml-4", "d-none");
+            z.classList.add("col-lg-6", "ml-4","mb-4");
         }
     }
 
@@ -295,12 +393,11 @@
             
         }
 
-        if (clicks + clicks2 + clicks3 == 1 ) {
+        if (clicks + clicks2 + clicks3 <= 1 ) {
             var x = document.getElementById("displayCard");
 
             x.classList.remove("col-lg-6", "ml-4");
             x.classList.add("col-lg-6", "ml-4" , "d-none");
-            console.log(x);
 
 
 
@@ -310,7 +407,20 @@
             var y = document.getElementById("displayCard2");
             y.classList.remove("col-lg-6", "ml-4");
             y.classList.add("col-lg-6", "ml-4", "d-none");
-            console.log(y);
+        }
+        else if (clicks + clicks2 + clicks3 <=3 ) {
+            
+
+            var t = document.getElementById("displayCard3");
+            t.classList.remove("col-lg-6", "ml-4");
+            t.classList.add("col-lg-6", "ml-4", "d-none");
+        }
+        else if (clicks + clicks2 + clicks3 <=4 ) {
+            
+
+            var z = document.getElementById("displayCard4");
+            z.classList.remove("col-lg-6", "ml-4");
+            z.classList.add("col-lg-6", "ml-4", "d-none");
         }
 
     };
@@ -353,6 +463,8 @@
         }
 
     };
+
+    
 </script>
 
 <script>
