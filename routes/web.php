@@ -68,3 +68,11 @@ Route::get('/cruise-hydra-spetses-from-tolo', function () {
 Route::get('/cruise-skiathos-koukounaries-from-glyfa', function () {
    return view('cruise-skiathos-koukounaries-from-glyfa');
 });
+
+Route::get('/new-navbar', function () {
+   return view('new-navbar');
+});
+
+Route::get('/new-navbar-dropdown', function () {
+   return view('new-navbar-dropdown');
+});
