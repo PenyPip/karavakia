@@ -11,62 +11,7 @@
                     <div class="text-center text-white">
                         <!-- Page heading-->
                         <h1 class="mb-5">Monemvasia</h1>
-                        <!-- Signup form-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form class="form-subscribe" id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <!-- Email address input-->
-                            <div class="row">
-                                <div class="col">
-                                    <!-- <select class="form-select form-select-lg" aria-label="Default select example">
-                                        <option selected>Επιλογή ημερήσιας κρουαζιέρας</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select> -->
 
-                                    <input class="form-control form-control-lg" list="datalistOptions" id="exampleDataList" placeholder="Επιλογή ημερήσιας κρουαζιέρας" data-sb-can-submit="yes">
-                                    <datalist id="datalistOptions">
-                                        <option value="ΥΔΡΑ">
-                                        </option>
-                                        <option value="ΣΠΕΤΣΕΣ">
-                                        </option>
-                                        <option value="ΞΑΝΑ ΣΠΕΤΣΕΣ">
-                                        </option>
-                                        <option value="Los Angeles">
-                                        </option>
-                                        <option value="Chicago">
-                                        </option>
-                                    </datalist>
-
-
-
-                                </div>
-                                <div class="col-auto"><button class="btn btn-primary btn-lg" id="submitButton" type="submit">Submit</button></div>
-                            </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage">
-                                <div class="text-center text-danger mb-3">Error sending message!</div>
-                            </div>
-                        </form>
                     </div>
                 </div>
             </div>
