@@ -9,7 +9,7 @@
     <header class="searchbox">
 
         <div class="container ">
-            <h1 class="text-center text-custom">Αναζήτηση ημερήσιας κρουαζιέρας</h2>
+            <h1 class="text-center text-custom">Αναζήτηση ημερήσιας κρουαζιέρας</h1>
                 <div class="row mb-2">
                     <div class="col-md-6 offset-md-3">
                         <div class="card border-0">
@@ -17,16 +17,14 @@
 
                                 <!-- AUTO COMPLETE DROPDOWN -->
                                 <select class="selectpicker form-control-lg border-2 mb-1 px-4 py-4 rounded shadow">
-                                <option hidden value="Επιλογή κατηγορίας επιβάτη">Επιλογή ημερήσιας εκδρομής</option>
-                                    <option value="ΥΔΡΑ">ΥΔΡΑ ΣΠΕΤΣΕΣ ΑΠΟ ΤΟΛΟ</option>
-                                    <option value="ΣΠΕΤΣΕΣ">ΠΟΡΤΟ ΧΕΛΙ ΥΔΡΑ ΣΠΕΤΣΕΣ ΑΠΟ ΤΟΛΟ</option>
-                                    <option value="Los Angeles">ΣΚΙΑΘΟΣ ΚΟΥΚΟΥΝΑΡΙΕΣ ΑΠΟ ΓΛΥΦΑ</option>
-                                    <option value="Chicago">ΣΚΟΠΕΛΟΣ ΑΛΟΝΝΗΣΟΣ ΑΠΟ ΓΛΥΦΑ</option>
+                                @foreach ($destinations as $destination)
+                                        <option value="{{ $destination->id }}">{{ $destination->name }}</option>
+                                @endforeach
                                 </select>
                             </div>
                         </div>
                     </div>
-                   
+
                 </div>
                 <div class="row mb-2 ">
                     <!-- <div class="col-lg-8">
@@ -57,9 +55,9 @@
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
-          
+
                 <!-- <div class="row">
                     <div class="col-lg-4">
                         <div class="d-grid gap-2">
@@ -236,12 +234,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    
+
 
 
     <!-- Include Choices JavaScript (latest) -->
     <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
-   
+
     <script src="js/jquery.min.js"></script>
  <script src="js/jquery-ui.js"></script>
 
@@ -277,7 +275,7 @@
                 clicks -= 1;
             document.getElementById("clicks").innerHTML = clicks;
             }
-            
+
         };
 
         function reload() {
@@ -331,8 +329,8 @@
        }
      });
     </script>
-	
-	
+
+
 </body>
 
 </html>
