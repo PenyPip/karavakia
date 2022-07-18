@@ -25,19 +25,18 @@
     <header class="searchbox">
 
         <div class="container ">
-            <h1 class="text-center text-custom">Αναζήτηση ημερήσιας κρουαζιέρας</h2>
+            <h1 class="text-center text-custom">Αναζήτηση ημερήσιας κρουαζιέρας</h1>
                 <div class="row mb-2">
                     <div class="col-md-6 offset-md-3">
                         <div class="card border-0">
                             <div class="card-body p-0">
 
                                 <!-- AUTO COMPLETE DROPDOWN -->
-                                <select class="selectpicker form-control-lg border-2  px-4 py-4 rounded shadow">
-                                    <option hidden value="Επιλογή κατηγορίας επιβάτη">Επιλογή ημερήσιας εκδρομής</option>
-                                    <option value="ΥΔΡΑ">ΥΔΡΑ ΣΠΕΤΣΕΣ ΑΠΟ ΤΟΛΟ</option>
-                                    <option value="ΣΠΕΤΣΕΣ">ΠΟΡΤΟ ΧΕΛΙ ΥΔΡΑ ΣΠΕΤΣΕΣ ΑΠΟ ΤΟΛΟ</option>
-                                    <option value="Los Angeles">ΣΚΙΑΘΟΣ ΚΟΥΚΟΥΝΑΡΙΕΣ ΑΠΟ ΓΛΥΦΑ</option>
-                                    <option value="Chicago">ΣΚΟΠΕΛΟΣ ΑΛΟΝΝΗΣΟΣ ΑΠΟ ΓΛΥΦΑ</option>
+                                <select class="selectpicker form-control-lg border-2 mb-1 px-4 py-4 rounded shadow">
+                                @foreach ($destinations as $destination)
+                                        <option value="{{ $destination->id }}">{{ $destination->name }}</option>
+                                @endforeach
+
                                 </select>
                             </div>
                         </div>

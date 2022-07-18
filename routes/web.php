@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 
 
@@ -19,7 +20,8 @@ Route::get('/search', function () {
 });
 
 Route::get('/homeSearch', function () {
-   return view('homeSearch');
+   $destinations = DB::table('destinations')->get();
+   return view('homeSearch')->with("destinations", $destinations);
 });
 Route::get('/passengerDetails', function () {
    return view('passengerDetails');

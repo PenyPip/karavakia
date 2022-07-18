@@ -55,7 +55,22 @@ and repeat the installation process.
 
 
 - Generate a project key by running `php artisan key:generate`
-- Test the project's functionality by running `php artisan serve`
+- Test the project's functionality by running `php artisan serve
+
+# Interacting with the Database
+
+In order to utilize and populate the database of your project, there are 3 requirements:
+
+- A **model** (a class-oriented approach of a table of our database.)
+- A **migration** (a class that defines the information that the database needs to know upon creation of a table.)
+- A **seeder** (a way of seeding the database with predefined data.)
+
+## Updating the local database to reflect project updates
+
+Once we have updated our project files with the files fetched from github, we have received the migrations, the models and seeders that are necessary to update our local database. To update our local database, the following command needs to be executred:
+`php artisan db:seed`
+
+In case the above fails, you need to run `composer dump-autoload` to rebuild the automatically generated composer files. Once that is done you may run `php artisan db:seed` again.
 
 # Troubleshooting: Potentially missing requirements
 
