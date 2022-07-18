@@ -76,3 +76,8 @@ Route::get('/new-navbar', function () {
 Route::get('/new-navbar-dropdown', function () {
    return view('new-navbar-dropdown');
 });
+
+
+Route::get('/loginf', function () {
+   return view('login');
+});
