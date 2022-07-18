@@ -32,7 +32,7 @@
                             <div class="card-body p-0">
 
                                 <!-- AUTO COMPLETE DROPDOWN -->
-                                <select class="selectpicker form-control-lg border-2 mb-1 px-4 py-4 rounded shadow">
+                                <select class="selectpicker form-control-lg border-2  px-4 py-4 rounded shadow">
                                     <option hidden value="Επιλογή κατηγορίας επιβάτη">Επιλογή ημερήσιας εκδρομής</option>
                                     <option value="ΥΔΡΑ">ΥΔΡΑ ΣΠΕΤΣΕΣ ΑΠΟ ΤΟΛΟ</option>
                                     <option value="ΣΠΕΤΣΕΣ">ΠΟΡΤΟ ΧΕΛΙ ΥΔΡΑ ΣΠΕΤΣΕΣ ΑΠΟ ΤΟΛΟ</option>
@@ -67,7 +67,9 @@
                         <div class="card border-0">
                             <div class="card-body p-0">
                                 <div class="d-grid gap-2">
-                                    <button class="btn-lg btn-light" type="button"><i class="fa fa-search"></i> Αναζήτηση</button>
+                                    
+                                    <button class="btn-lg btn-light" type="button" onClick="passDet()"><i class="fa fa-search"></i> Αναζήτηση</button>
+                                    
                                 </div>
 
                             </div>
@@ -338,6 +340,10 @@
 
             }
         });
+
+        function passDet(){
+            window.location.assign("/passengerDetails")
+        }
     </script>
 
 
