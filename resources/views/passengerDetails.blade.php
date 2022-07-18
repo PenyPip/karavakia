@@ -125,17 +125,13 @@
                                     <div class="carousel-item active">
                                         <img src="images/nauplio1.jpg" class="d-block w-100" alt="Slide 1" width="450" height="320">
                                         <div class="carousel-caption d-none d-md-block">
-                                            <button type="button" class="btn btn-primary btn btn-block align-self-center">
-                                                <h5 class="card-title text-center">ΚΡΟΥΑΖΙΕΡΑ: ΝΑΥΠΛΙΟ BY NIGHT</h5>
-                                            </button>
+                                            <h5 class="card-title text-center align-self-center">ΚΡΟΥΑΖΙΕΡΑ: ΝΑΥΠΛΙΟ BY NIGHT</h5>
                                         </div>
                                     </div>
                                     <div class="carousel-item">
                                         <img src="images/nauplio.jpg" class="d-block w-100" alt="Slide 2" width="450" height="320">
                                         <div class="carousel-caption d-none d-md-block">
-                                            <button type="button" class="btn btn-primary btn-block align-self-center">
-                                                <h5 class="card-title text-center">ΚΡΟΥΑΖΙΕΡΑ: ΝΑΥΠΛΙΟ BY NIGHT</h5>
-                                            </button>
+                                                <h5 class="card-title text-center align-self-center">ΚΡΟΥΑΖΙΕΡΑ: ΝΑΥΠΛΙΟ BY NIGHT</h5>
                                         </div>
                                     </div>
                                     <div class="carousel-item">

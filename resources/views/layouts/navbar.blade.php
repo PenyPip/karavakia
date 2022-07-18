@@ -14,7 +14,8 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+    <link href="css/choices.css" rel="stylesheet" />
+
 
     <link rel="stylesheet" href="js/jquery-ui.css">
     <link href="css/stepper.css" rel="stylesheet" />
