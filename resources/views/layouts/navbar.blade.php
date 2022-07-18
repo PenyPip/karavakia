@@ -94,32 +94,42 @@
 <!-- Navigation-->
 
 <nav class="navbar navbar-light bg-custom static-top">
-    <div class="container">
+        <div class="container">
 
-        <a class="navbar-brand" href="#">
-            <img src="images/pegasusLogo.png" alt="Girl in a jacket" width="190" height="60">
-        </a>
-        <nav class="navbar navbar-light">
-            <a class="navbar-brand" href="/homesearch" style="color: #fff; font-size: 15px;">HOME</a>
-        </nav>
-        <nav class="navbar navbar-light">
-            <a class="navbar-brand" href="/passengerDetails" style="color: #fff; font-size: 15px;">CRUISES</a>
-        </nav>
-        <nav class="navbar navbar-light">
-            <a class="navbar-brand" href="#" style="color: #fff; font-size: 15px;">DESTINATIONS</a>
-        </nav>
-        <nav class="navbar navbar-light">
-            <a class="navbar-brand" href="#" style="color: #fff; font-size: 15px;">INFORMATION</a>
-        </nav>
-        <nav class="navbar navbar-light">
-            <a class="navbar-brand" href="#" style="color: #fff; font-size: 15px;">SHIPS</a>
-        </nav>
-        <nav class="navbar navbar-light">
-            <a class="navbar-brand" href="#" style="color: #fff; font-size: 15px;">NEWS</a>
-        </nav>
-        <nav class="navbar navbar-light">
-            <a class="navbar-brand" href="#" style="color: #fff; font-size: 15px;">CONTACT</a>
-        </nav>
-        <a class="btn btn-primary" href="#signup">Sign Up</a>
-    </div>
-</nav>
+            <a class="navbar-brand" href="#">
+                <img src="images/pegasusLogo.png" alt="Girl in a jacket" width="190" height="60">
+            </a>
+            <nav class="navbar navbar-light">
+                <a class="navbar-brand" href="/homesearch" style="color: #fff; font-size: 15px;">HOME</a>
+            </nav>
+            <nav class="navbar navbar-light">
+                <a class="navbar-brand" href="/passengerDetails" style="color: #fff; font-size: 15px;">CRUISES</a>
+            </nav>
+            <nav class="navbar navbar-light">
+                <a class="navbar-brand" href="#" style="color: #fff; font-size: 15px;">DESTINATIONS</a>
+            </nav>
+            <nav class="navbar navbar-light">
+                <a class="navbar-brand" href="#" style="color: #fff; font-size: 15px;">INFORMATION</a>
+            </nav>
+            <nav class="navbar navbar-light">
+                <a class="navbar-brand" href="#" style="color: #fff; font-size: 15px;">SHIPS</a>
+            </nav>
+            <nav class="navbar navbar-light">
+                <a class="navbar-brand" href="#" style="color: #fff; font-size: 15px;">NEWS</a>
+            </nav>
+            <nav class="navbar navbar-light">
+                <a class="navbar-brand" href="#" style="color: #fff; font-size: 15px;">CONTACT</a>
+            </nav>
+            <nav class="navbar navbar-light">
+                <a class="navbar-brand" href="#"><img src="images/flag-en.png"></a>
+                <a class="navbar-brand" href="#"><img src="images/flag-fr.png"></a>
+                <a class="navbar-brand" href="#"><img src="images/flag-sr.png"></a>
+                <a class="navbar-brand" href="#"><img src="images/flag-ru.png"></a>
+                <a class="navbar-brand" href="#"><img src="images/flag-ro.png"></a>
+                <a class="navbar-brand" href="#"><img src="images/flag-pl.png"></a>
+                <a class="navbar-brand" href="#"><img src="images/flag-cs.png"></a>
+                <a class="navbar-brand" href="#"><img src="images/flag-hu.png"></a>
+            </nav>
+            <a class="btn btn-primary" href="/loginf">Login</a>
+        </div>
+    </nav>
