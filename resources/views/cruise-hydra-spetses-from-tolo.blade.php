@@ -20,10 +20,12 @@
         padding-top: 17.5px;
         text-align: center;
         margin-right: 20px;
+        color: #fff;
     }
 
     .itenerary-circles:hover {
         background: none;
+        color: #26bdf7;
     }
 
     .itinerary-structure {

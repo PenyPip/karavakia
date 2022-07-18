@@ -20,10 +20,16 @@
         padding-top: 17.5px;
         text-align: center;
         margin-right: 20px;
+        color: #fff;
     }
 
     .itenerary-circles:hover {
         background: none;
+        color: #26bdf7;
+    }
+
+    .itinerary-structure h2 {
+        font-size: 22px;
     }
 
     .itinerary-structure {
@@ -175,8 +181,8 @@
 
                     <div style="background: #113f82; color:#fff; font-weight:bold;">
                         <p>ROUTE: Glyfa – Skiathos – Koukounaries – Glyfa</p>
-                        <img src="images/pegasus-glifa-koukounaries-skiathos.jpg" style="width:683px; height:377px;" />
                     </div>
+                    <img src="images/pegasus-glifa-koukounaries-skiathos.jpg" style="width:683px; height:377px;" />
                     <h3><b>Itinerary</b></h3>
                     <div class="itinerary-structure" style="display:grid; grid-template-columns:1fr 10fr;">
                         <div class="itenerary-circles">
@@ -248,23 +254,22 @@
                     <p style="text-align: center;"><span style="font-size: 8pt;">Please note that the timings are approximate. All sailing times from the islands will be confirmed on the day, on the boat. Itinerary can be changed or cancelled without prior notice.
 
                         </span></p>
-                    <!-- CONTINUE FROM HERE -->
+
                     <h3><b>HOW TO REACH US</b></h3>
-                    <p>From Athens -> Nafplion -> Tolo</p>
-                    <p><b>By car:</b> Go along expressway Athens – Corinth (E94) or ΑΤΤΙΚΙ ODOS, continue on expressway Corinth-Tripoli-Kalamata (E65). Leave the expressway 7 klms after the tolls at Spathovouni, towards Mycenae, Nafplio. Continue on the district road Corinth – Argos for a few klms and then turn left on the new road towards Nafplion. Go straight ahead for a few klms and then you’ll see a sign which will tell you to turn left towards Epidavros. Continue on this road, signs will lead you to Tolo without having to go through Nafplion.</p>
-                    <p></b>By bus:</b>(www.ktel.org) You can get a bus from Athens straight to Nafplion at the Interurban Bus Station on Kifisos street. Departures every hour from early in the morning until late in the evening. When you arrive in Nafplion get the local bus for Tolo (almost every hour from morning until the evening)
-                        </br> Contact bus stations: in Nafplion: 2752027323 – in Athens: 2105124910</p>
-                    <p><b>By taxi from Nafplion:</b> approx. €18</p>
-                    <p><b>From Patra</b></p>
-                    <p><b>By car:</b> Go along the expressway Patras – Corinth, then follow the expressway Corinth-Tripoli-Kalamata (E65). ). Leave the expressway 7 klms after the tolls at Spathovouni, towards Mycenae, Nafplio. Continue on the district road Corinth – Argos for a few klms and then turn left on the new road towards Nafplion. Go straight ahead for a few klms and then you’ll see a sign which will tell you to turn left towards Epidavros. Continue on this road, signs will lead you to Tolo without having to go through Nafplion.
-                        <br>Contact bus stations: in Nafplion: 2752027323 – in Athens: 2105124910 – in Patras: 2610623886 – Corinth Canal: 2741048444
-                    </p>
-                    <p><b>By bus:</b> (www.ktel.org) You can get a bus at the Interurban Bus Station in Patras to the Corinth Canal. Switch buses, get the Nafplion one (every hour from early in the morning until the evening). When you arrive in Nafplion get the local bus for Tolo (almost every hour from morning until the evening)
-                        <br>Contact bus stations: in Nafplion: 2752027323 – in Athens: 2105124910 – in Patras: 2610623886 – Corinth Canal: 2741048444
-                    </p>
-                    <p><b>By taxi from Nafplion:</b> approx. €18</p>
+                    <p><b>From Athens</b></p>
+                    <p>Bus: Take the bus at KTEL FTHIOTIDAS to Lamia. (2.5 hours journey) There you change for KTEL STYLIDAS and you reach your destination, glyfa.</p>
+                    <p>Train: You get the train at Larissis Station in Athens towards Thessaloniki. You get off at Lainokladi station, near Lamia and from there you continue using the bus from KTEL Lamias to KTEL STYLIDAS to reach your destination, Glyfa.</p>
+                    <p>Car: You take the highway Athens-Thessaloniki (distance 270 klms) and after passing by the tolls in Pelasgia there is a sign right towards Glyfa. Estimated travelling time 2,5 hours.</p>
+                    <p>Ferry boat: If you want to come through the island of Evoia, you can leave the highway near Chalkida and continue towards northern Evoia OR at Arkitsa you can cross over by ferry boat to Edipsos and then continue using the ferry from Agiokampos to Glyfa.</p>
+                    <p>If you wish to come through Evoia there are ferry boats that connect Fthiotida with Evoia, Arkitsa and Glyfa. There are 8 itineraries daily from Agiokampos to Glyfa and 12 from Arkitsa to Edipsos.</p>
+                    <br>
+                    <p><b>From Thessaloniki</b></p>
+                    <p>Bus: there are several itineraries daily towards Athens. You’ll get off at the tolls of Pelasgia and wait for the connection of KTEL STYLIDAS to Glyfa.</p>
+                    <p><b>From Lamia</b></p>
+                    <p>Bus: there is a bus 2 times a day for Glyfa with KTEL STYLIDAS.</p>
+                    <p>Car: The distance is 59 klms and the average estimated travelling time is 30 minutes.</p>
                     <h3><b>MAP</b></h3>
-                    <img src="images/pegasus-tolo-ydra-spetses-2.jpg" style="width:513px; height:284px;">
+                    <img src="images/pegasus-glifa-koukounaries-skiathos.jpg" style="width:683px; height:377px;">
                 </div>
                 <!--
                     <div class=" tour-booking-panel" margin-top: -25px>
