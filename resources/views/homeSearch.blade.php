@@ -17,6 +17,7 @@
 
                                 <!-- AUTO COMPLETE DROPDOWN -->
                                 <select class="selectpicker form-control-lg border-2 mb-1 px-4 py-4 rounded shadow">
+                                    <option hidden value="">Επιλογή ημερήσιας διαδρομής</option>
                                 @foreach ($destinations as $destination)
                                         <option value="{{ $destination->id }}">{{ $destination->name }}</option>
                                 @endforeach
