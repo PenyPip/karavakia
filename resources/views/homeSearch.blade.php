@@ -18,10 +18,10 @@
                                 <!-- AUTO COMPLETE DROPDOWN -->
                                 <select class="selectpicker form-control-lg border-2 mb-1 px-4 py-4 rounded shadow">
                                 <option hidden value="Επιλογή κατηγορίας επιβάτη">Επιλογή ημερήσιας εκδρομής</option>
-                                    <option value="ΥΔΡΑ">ΣΚΙΑΘΟΣ</option>
-                                    <option value="ΣΠΕΤΣΕΣ">ΥΔΡΑ</option>
-                                    <option value="Los Angeles">ΣΚΟΠΕΛΟΣ</option>
-                                    <option value="Chicago">ΑΛΟΝΝΗΣΟΣ</option>
+                                    <option value="ΥΔΡΑ">ΥΔΡΑ ΣΠΕΤΣΕΣ ΑΠΟ ΤΟΛΟ</option>
+                                    <option value="ΣΠΕΤΣΕΣ">ΠΟΡΤΟ ΧΕΛΙ ΥΔΡΑ ΣΠΕΤΣΕΣ ΑΠΟ ΤΟΛΟ</option>
+                                    <option value="Los Angeles">ΣΚΙΑΘΟΣ ΚΟΥΚΟΥΝΑΡΙΕΣ ΑΠΟ ΓΛΥΦΑ</option>
+                                    <option value="Chicago">ΣΚΟΠΕΛΟΣ ΑΛΟΝΝΗΣΟΣ ΑΠΟ ΓΛΥΦΑ</option>
                                 </select>
                             </div>
                         </div>
@@ -120,8 +120,8 @@
             </div>
         </div>
     </div>
-    <!-- Image Showcases-->
-    <section class="showcase">
+    Image Showcases
+    <!-- <section class="showcase">
         <div class="container-fluid p-0">
             <div class="row g-0">
                 <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('images/bg-showcase-1.jpg')"></div>
@@ -145,9 +145,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Testimonials-->
-    <section class="testimonials text-center bg-light">
+    <!-- <section class="testimonials text-center bg-light">
         <div class="container">
             <h2 class="mb-5">What people are saying...</h2>
             <div class="row">
@@ -174,7 +174,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Call to Action-->
     <section class="call-to-action text-white text-center" id="signup">
         <div class="container position-relative">
