@@ -15,7 +15,50 @@
     <!-- Masthead-->
     <header class="passengerDetails">
 
+       
         <div class="container ml-4 py-3">
+             <!-- stepper -->
+
+        <div id="stepper-example" class="bs-stepper">
+            <div class="bs-stepper-header">
+                <div class="step" data-target="#test-l-1">
+                    <a href="/homeSearch">
+                    <div class="active">
+                        <span class="bs-stepper-circle"><i class="fa fa-ship fa-lg"></i></span>
+                    </div>
+                    </a>
+                </div>
+                <div class="line"></div>
+                <div class="step" data-target="#test-l-2">
+                    <a href="/passengerDetails">
+                        <span class="bs-stepper-circle"><i class="fa fa-pencil fa-lg"></i></span>
+                    </a>
+                </div>
+                <div class="line"></div>
+                <div class="step" data-target="#test-l-3">
+                    <a href="booking-payment">
+                        <span class="bs-stepper-circle"><i class="fa fa-credit-card fa-lg"></i></span>
+                    </a>
+                </div>
+            </div>
+            <div class="bs-stepper-content">
+                <div id="test-l-1" class="content">
+                    <p class="text-center">test 1</p>
+                    <button class="btn btn-primary" onclick="myStepper.next()">Next</button>
+                </div>
+                <div id="test-l-2" class="content">
+                    <p class="text-center">test 2</p>
+                    <button class="btn btn-primary" onclick="myStepper.next()">Next</button>
+                </div>
+                <div id="test-l-3" class="content">
+                    <p class="text-center">test 3</p>
+                    <button class="btn btn-primary" onclick="myStepper.next()">Next</button>
+                    <button class="btn btn-primary" onclick="myStepper.previous()">Previous</button>
+                </div>
+            </div>
+        </div>
+
+        <!--  -->
             <div class="row">
                 <div class="col-lg-6 ml-4 mb-4">
                     <h2 class="text-center text-custom mb-4">Στοιχεία επιβατών</h2>
@@ -173,347 +216,347 @@
                 </div>
             </div>
 
-                <div class="col-lg-6 ml-4 d-none" id="displayCard">
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header " id="headingOne">
-                                <button class="accordion-button text-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    <h3 class="text-center">Επιβάτης 2 </h3>
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse hide" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <div class="card card-body  ">
+            <div class="col-lg-6 ml-4 d-none" id="displayCard">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header " id="headingOne">
+                            <button class="accordion-button text-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <h3 class="text-center">Επιβάτης 2 </h3>
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse hide" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="card card-body  ">
 
 
-                                        <fieldset>
-                                            <div class="form-group has-error mb-4">
-                                                <input class="form-control input-lg" placeholder="Eπώνυμο" name="lastname" value="" type="text" required>
-                                            </div>
-                                            <div class="form-group has-success mb-4">
-                                                <input class="form-control input-lg" placeholder="'Ονομα" name="name" value="" type="text" required>
-                                            </div>
+                                    <fieldset>
+                                        <div class="form-group has-error mb-4">
+                                            <input class="form-control input-lg" placeholder="Eπώνυμο" name="lastname" value="" type="text" required>
+                                        </div>
+                                        <div class="form-group has-success mb-4">
+                                            <input class="form-control input-lg" placeholder="'Ονομα" name="name" value="" type="text" required>
+                                        </div>
 
-                                            <div class="form-group mb-4">
-                                                <select class="form-control input-lg">
-                                                    <option selected="">--Εθνικότητα</option>
-                                                    <option value="afghan">Afghan</option>
-                                                    <option value="albanian">Albanian</option>
-                                                    <option value="algerian">Algerian</option>
-                                                    <option value="american">American</option>
-                                                    <option value="andorran">Andorran</option>
-                                                    <option value="angolan">Angolan</option>
-                                                    <option value="antiguans">Antiguans</option>
-                                                    <option value="argentinean">Argentinean</option>
-                                                    <option value="armenian">Armenian</option>
-                                                    <option value="australian">Australian</option>
-                                                    <option value="austrian">Austrian</option>
-                                                    <option value="azerbaijani">Azerbaijani</option>
-                                                    <option value="bahamian">Bahamian</option>
-                                                    <option value="bahraini">Bahraini</option>
-                                                    <option value="bangladeshi">Bangladeshi</option>
-                                                    <option value="barbadian">Barbadian</option>
-                                                </select>
-                                            </div>
+                                        <div class="form-group mb-4">
+                                            <select class="form-control input-lg">
+                                                <option selected="">--Εθνικότητα</option>
+                                                <option value="afghan">Afghan</option>
+                                                <option value="albanian">Albanian</option>
+                                                <option value="algerian">Algerian</option>
+                                                <option value="american">American</option>
+                                                <option value="andorran">Andorran</option>
+                                                <option value="angolan">Angolan</option>
+                                                <option value="antiguans">Antiguans</option>
+                                                <option value="argentinean">Argentinean</option>
+                                                <option value="armenian">Armenian</option>
+                                                <option value="australian">Australian</option>
+                                                <option value="austrian">Austrian</option>
+                                                <option value="azerbaijani">Azerbaijani</option>
+                                                <option value="bahamian">Bahamian</option>
+                                                <option value="bahraini">Bahraini</option>
+                                                <option value="bangladeshi">Bangladeshi</option>
+                                                <option value="barbadian">Barbadian</option>
+                                            </select>
+                                        </div>
 
-                                            <div class="form-group has-success mb-4">
-                                                <p class="form-control  datepicker " placeholder="'Ονομα" name="name" value="" type="text" required>
+                                        <div class="form-group has-success mb-4">
+                                            <p class="form-control  datepicker " placeholder="'Ονομα" name="name" value="" type="text" required>
 
-                                                    <button class="btn btn-transparent" type="button"><i class="fa fa-calendar"></i> <input type="text" class="datepicker" placeholder="Ημερομηνία γέννησης"></button>
-                                            </div>
+                                                <button class="btn btn-transparent" type="button"><i class="fa fa-calendar"></i> <input type="text" class="datepicker" placeholder="Ημερομηνία γέννησης"></button>
+                                        </div>
 
-                                        </fieldset>
-                                    </div>
+                                    </fieldset>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                        </div>
+            </div>
             <div class="col-lg-6 ml-4 d-none" id="displayCard2">
-                    <div class="accordion" id="accordionExample2">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header " id="headingOne">
-                                <button class="accordion-button text-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
-                                    <h3 class="text-center">Επιβάτης 3 </h3>
-                                </button>
-                            </h2>
-                            <div id="collapseOne2" class="accordion-collapse collapse hide" aria-labelledby="headingOne" data-bs-parent="#accordionExample2">
-                                <div class="accordion-body">
-                                    <div class="card card-body  ">
+                <div class="accordion" id="accordionExample2">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header " id="headingOne">
+                            <button class="accordion-button text-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
+                                <h3 class="text-center">Επιβάτης 3 </h3>
+                            </button>
+                        </h2>
+                        <div id="collapseOne2" class="accordion-collapse collapse hide" aria-labelledby="headingOne" data-bs-parent="#accordionExample2">
+                            <div class="accordion-body">
+                                <div class="card card-body  ">
 
 
-                                        <fieldset>
-                                            <div class="form-group has-error mb-4">
-                                                <input class="form-control input-lg" placeholder="Eπώνυμο" name="lastname" value="" type="text" required>
-                                            </div>
-                                            <div class="form-group has-success mb-4">
-                                                <input class="form-control input-lg" placeholder="'Ονομα" name="name" value="" type="text" required>
-                                            </div>
+                                    <fieldset>
+                                        <div class="form-group has-error mb-4">
+                                            <input class="form-control input-lg" placeholder="Eπώνυμο" name="lastname" value="" type="text" required>
+                                        </div>
+                                        <div class="form-group has-success mb-4">
+                                            <input class="form-control input-lg" placeholder="'Ονομα" name="name" value="" type="text" required>
+                                        </div>
 
-                                            <div class="form-group mb-4">
-                                                <select class="form-control input-lg">
-                                                    <option selected="">--Εθνικότητα</option>
-                                                    <option value="afghan">Afghan</option>
-                                                    <option value="albanian">Albanian</option>
-                                                    <option value="algerian">Algerian</option>
-                                                    <option value="american">American</option>
-                                                    <option value="andorran">Andorran</option>
-                                                    <option value="angolan">Angolan</option>
-                                                    <option value="antiguans">Antiguans</option>
-                                                    <option value="argentinean">Argentinean</option>
-                                                    <option value="armenian">Armenian</option>
-                                                    <option value="australian">Australian</option>
-                                                    <option value="austrian">Austrian</option>
-                                                    <option value="azerbaijani">Azerbaijani</option>
-                                                    <option value="bahamian">Bahamian</option>
-                                                    <option value="bahraini">Bahraini</option>
-                                                    <option value="bangladeshi">Bangladeshi</option>
-                                                    <option value="barbadian">Barbadian</option>
-                                                </select>
-                                            </div>
+                                        <div class="form-group mb-4">
+                                            <select class="form-control input-lg">
+                                                <option selected="">--Εθνικότητα</option>
+                                                <option value="afghan">Afghan</option>
+                                                <option value="albanian">Albanian</option>
+                                                <option value="algerian">Algerian</option>
+                                                <option value="american">American</option>
+                                                <option value="andorran">Andorran</option>
+                                                <option value="angolan">Angolan</option>
+                                                <option value="antiguans">Antiguans</option>
+                                                <option value="argentinean">Argentinean</option>
+                                                <option value="armenian">Armenian</option>
+                                                <option value="australian">Australian</option>
+                                                <option value="austrian">Austrian</option>
+                                                <option value="azerbaijani">Azerbaijani</option>
+                                                <option value="bahamian">Bahamian</option>
+                                                <option value="bahraini">Bahraini</option>
+                                                <option value="bangladeshi">Bangladeshi</option>
+                                                <option value="barbadian">Barbadian</option>
+                                            </select>
+                                        </div>
 
-                                            <div class="form-group has-success mb-4">
-                                                <p class="form-control  datepicker " placeholder="'Ονομα" name="name" value="" type="text" required>
+                                        <div class="form-group has-success mb-4">
+                                            <p class="form-control  datepicker " placeholder="'Ονομα" name="name" value="" type="text" required>
 
-                                                    <button class="btn btn-transparent" type="button"><i class="fa fa-calendar"></i> <input type="text" class="datepicker" placeholder="Ημερομηνία γέννησης"></button>
-                                            </div>
+                                                <button class="btn btn-transparent" type="button"><i class="fa fa-calendar"></i> <input type="text" class="datepicker" placeholder="Ημερομηνία γέννησης"></button>
+                                        </div>
 
-                                        </fieldset>
-                                    </div>
+                                    </fieldset>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- 3rd card -->
-                <div class="col-lg-6 ml-4 d-none" id="displayCard3">
-                    <div class="accordion" id="accordionExample3">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header " id="headingOne">
-                                <button class="accordion-button text-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne3" aria-expanded="true" aria-controls="collapseOne3">
-                                    <h3 class="text-center">Επιβάτης 4 </h3>
-                                </button>
-                            </h2>
-                            <div id="collapseOne3" class="accordion-collapse collapse hide" aria-labelledby="headingOne" data-bs-parent="#accordionExample3">
-                                <div class="accordion-body">
-                                    <div class="card card-body  ">
+            </div>
+            <!-- 3rd card -->
+            <div class="col-lg-6 ml-4 d-none" id="displayCard3">
+                <div class="accordion" id="accordionExample3">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header " id="headingOne">
+                            <button class="accordion-button text-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne3" aria-expanded="true" aria-controls="collapseOne3">
+                                <h3 class="text-center">Επιβάτης 4 </h3>
+                            </button>
+                        </h2>
+                        <div id="collapseOne3" class="accordion-collapse collapse hide" aria-labelledby="headingOne" data-bs-parent="#accordionExample3">
+                            <div class="accordion-body">
+                                <div class="card card-body  ">
 
 
-                                        <fieldset>
-                                            <div class="form-group has-error mb-4">
-                                                <input class="form-control input-lg" placeholder="Eπώνυμο" name="lastname" value="" type="text" required>
-                                            </div>
-                                            <div class="form-group has-success mb-4">
-                                                <input class="form-control input-lg" placeholder="'Ονομα" name="name" value="" type="text" required>
-                                            </div>
+                                    <fieldset>
+                                        <div class="form-group has-error mb-4">
+                                            <input class="form-control input-lg" placeholder="Eπώνυμο" name="lastname" value="" type="text" required>
+                                        </div>
+                                        <div class="form-group has-success mb-4">
+                                            <input class="form-control input-lg" placeholder="'Ονομα" name="name" value="" type="text" required>
+                                        </div>
 
-                                            <div class="form-group mb-4">
-                                                <select class="form-control input-lg">
-                                                    <option selected="">--Εθνικότητα</option>
-                                                    <option value="afghan">Afghan</option>
-                                                    <option value="albanian">Albanian</option>
-                                                    <option value="algerian">Algerian</option>
-                                                    <option value="american">American</option>
-                                                    <option value="andorran">Andorran</option>
-                                                    <option value="angolan">Angolan</option>
-                                                    <option value="antiguans">Antiguans</option>
-                                                    <option value="argentinean">Argentinean</option>
-                                                    <option value="armenian">Armenian</option>
-                                                    <option value="australian">Australian</option>
-                                                    <option value="austrian">Austrian</option>
-                                                    <option value="azerbaijani">Azerbaijani</option>
-                                                    <option value="bahamian">Bahamian</option>
-                                                    <option value="bahraini">Bahraini</option>
-                                                    <option value="bangladeshi">Bangladeshi</option>
-                                                    <option value="barbadian">Barbadian</option>
-                                                </select>
-                                            </div>
+                                        <div class="form-group mb-4">
+                                            <select class="form-control input-lg">
+                                                <option selected="">--Εθνικότητα</option>
+                                                <option value="afghan">Afghan</option>
+                                                <option value="albanian">Albanian</option>
+                                                <option value="algerian">Algerian</option>
+                                                <option value="american">American</option>
+                                                <option value="andorran">Andorran</option>
+                                                <option value="angolan">Angolan</option>
+                                                <option value="antiguans">Antiguans</option>
+                                                <option value="argentinean">Argentinean</option>
+                                                <option value="armenian">Armenian</option>
+                                                <option value="australian">Australian</option>
+                                                <option value="austrian">Austrian</option>
+                                                <option value="azerbaijani">Azerbaijani</option>
+                                                <option value="bahamian">Bahamian</option>
+                                                <option value="bahraini">Bahraini</option>
+                                                <option value="bangladeshi">Bangladeshi</option>
+                                                <option value="barbadian">Barbadian</option>
+                                            </select>
+                                        </div>
 
-                                            <div class="form-group has-success mb-4">
-                                                <p class="form-control  datepicker " placeholder="'Ονομα" name="name" value="" type="text" required>
+                                        <div class="form-group has-success mb-4">
+                                            <p class="form-control  datepicker " placeholder="'Ονομα" name="name" value="" type="text" required>
 
-                                                    <button class="btn btn-transparent" type="button"><i class="fa fa-calendar"></i> <input type="text" class="datepicker" placeholder="Ημερομηνία γέννησης"></button>
-                                            </div>
+                                                <button class="btn btn-transparent" type="button"><i class="fa fa-calendar"></i> <input type="text" class="datepicker" placeholder="Ημερομηνία γέννησης"></button>
+                                        </div>
 
-                                        </fieldset>
-                                    </div>
+                                    </fieldset>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- 4th card -->
-                <div class="col-lg-6 ml-4 d-none" id="displayCard4">
-                    <div class="accordion" id="accordionExample4">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header " id="headingOne">
-                                <button class="accordion-button text-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne4" aria-expanded="true" aria-controls="collapseOne4">
-                                    <h3 class="text-center">Επιβάτης 5 </h3>
-                                </button>
-                            </h2>
-                            <div id="collapseOne4" class="accordion-collapse collapse hide" aria-labelledby="headingOne" data-bs-parent="#accordionExample4">
-                                <div class="accordion-body">
-                                    <div class="card card-body  ">
+            </div>
+            <!-- 4th card -->
+            <div class="col-lg-6 ml-4 d-none" id="displayCard4">
+                <div class="accordion" id="accordionExample4">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header " id="headingOne">
+                            <button class="accordion-button text-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne4" aria-expanded="true" aria-controls="collapseOne4">
+                                <h3 class="text-center">Επιβάτης 5 </h3>
+                            </button>
+                        </h2>
+                        <div id="collapseOne4" class="accordion-collapse collapse hide" aria-labelledby="headingOne" data-bs-parent="#accordionExample4">
+                            <div class="accordion-body">
+                                <div class="card card-body  ">
 
 
-                                        <fieldset>
-                                            <div class="form-group has-error mb-4">
-                                                <input class="form-control input-lg" placeholder="Eπώνυμο" name="lastname" value="" type="text" required>
-                                            </div>
-                                            <div class="form-group has-success mb-4">
-                                                <input class="form-control input-lg" placeholder="'Ονομα" name="name" value="" type="text" required>
-                                            </div>
+                                    <fieldset>
+                                        <div class="form-group has-error mb-4">
+                                            <input class="form-control input-lg" placeholder="Eπώνυμο" name="lastname" value="" type="text" required>
+                                        </div>
+                                        <div class="form-group has-success mb-4">
+                                            <input class="form-control input-lg" placeholder="'Ονομα" name="name" value="" type="text" required>
+                                        </div>
 
-                                            <div class="form-group mb-4">
-                                                <select class="form-control input-lg">
-                                                    <option selected="">--Εθνικότητα</option>
-                                                    <option value="afghan">Afghan</option>
-                                                    <option value="albanian">Albanian</option>
-                                                    <option value="algerian">Algerian</option>
-                                                    <option value="american">American</option>
-                                                    <option value="andorran">Andorran</option>
-                                                    <option value="angolan">Angolan</option>
-                                                    <option value="antiguans">Antiguans</option>
-                                                    <option value="argentinean">Argentinean</option>
-                                                    <option value="armenian">Armenian</option>
-                                                    <option value="australian">Australian</option>
-                                                    <option value="austrian">Austrian</option>
-                                                    <option value="azerbaijani">Azerbaijani</option>
-                                                    <option value="bahamian">Bahamian</option>
-                                                    <option value="bahraini">Bahraini</option>
-                                                    <option value="bangladeshi">Bangladeshi</option>
-                                                    <option value="barbadian">Barbadian</option>
-                                                </select>
-                                            </div>
+                                        <div class="form-group mb-4">
+                                            <select class="form-control input-lg">
+                                                <option selected="">--Εθνικότητα</option>
+                                                <option value="afghan">Afghan</option>
+                                                <option value="albanian">Albanian</option>
+                                                <option value="algerian">Algerian</option>
+                                                <option value="american">American</option>
+                                                <option value="andorran">Andorran</option>
+                                                <option value="angolan">Angolan</option>
+                                                <option value="antiguans">Antiguans</option>
+                                                <option value="argentinean">Argentinean</option>
+                                                <option value="armenian">Armenian</option>
+                                                <option value="australian">Australian</option>
+                                                <option value="austrian">Austrian</option>
+                                                <option value="azerbaijani">Azerbaijani</option>
+                                                <option value="bahamian">Bahamian</option>
+                                                <option value="bahraini">Bahraini</option>
+                                                <option value="bangladeshi">Bangladeshi</option>
+                                                <option value="barbadian">Barbadian</option>
+                                            </select>
+                                        </div>
 
-                                            <div class="form-group has-success mb-4">
-                                                <p class="form-control  datepicker " placeholder="'Ονομα" name="name" value="" type="text" required>
+                                        <div class="form-group has-success mb-4">
+                                            <p class="form-control  datepicker " placeholder="'Ονομα" name="name" value="" type="text" required>
 
-                                                    <button class="btn btn-transparent" type="button"><i class="fa fa-calendar"></i> <input type="text" class="datepicker" placeholder="Ημερομηνία γέννησης"></button>
-                                            </div>
+                                                <button class="btn btn-transparent" type="button"><i class="fa fa-calendar"></i> <input type="text" class="datepicker" placeholder="Ημερομηνία γέννησης"></button>
+                                        </div>
 
-                                        </fieldset>
-                                    </div>
+                                    </fieldset>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-<!-- 5th card -->
-<div class="col-lg-6 ml-4 d-none" id="displayCard5">
-                    <div class="accordion" id="accordionExample5">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header " id="headingOne">
-                                <button class="accordion-button text-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne5" aria-expanded="true" aria-controls="collapseOne5">
-                                    <h3 class="text-center">Επιβάτης 6 </h3>
-                                </button>
-                            </h2>
-                            <div id="collapseOne5" class="accordion-collapse collapse hide" aria-labelledby="headingOne" data-bs-parent="#accordionExample5">
-                                <div class="accordion-body">
-                                    <div class="card card-body  ">
+            </div>
+            <!-- 5th card -->
+            <div class="col-lg-6 ml-4 d-none" id="displayCard5">
+                <div class="accordion" id="accordionExample5">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header " id="headingOne">
+                            <button class="accordion-button text-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne5" aria-expanded="true" aria-controls="collapseOne5">
+                                <h3 class="text-center">Επιβάτης 6 </h3>
+                            </button>
+                        </h2>
+                        <div id="collapseOne5" class="accordion-collapse collapse hide" aria-labelledby="headingOne" data-bs-parent="#accordionExample5">
+                            <div class="accordion-body">
+                                <div class="card card-body  ">
 
 
-                                        <fieldset>
-                                            <div class="form-group has-error mb-4">
-                                                <input class="form-control input-lg" placeholder="Eπώνυμο" name="lastname" value="" type="text" required>
-                                            </div>
-                                            <div class="form-group has-success mb-4">
-                                                <input class="form-control input-lg" placeholder="'Ονομα" name="name" value="" type="text" required>
-                                            </div>
+                                    <fieldset>
+                                        <div class="form-group has-error mb-4">
+                                            <input class="form-control input-lg" placeholder="Eπώνυμο" name="lastname" value="" type="text" required>
+                                        </div>
+                                        <div class="form-group has-success mb-4">
+                                            <input class="form-control input-lg" placeholder="'Ονομα" name="name" value="" type="text" required>
+                                        </div>
 
-                                            <div class="form-group mb-4">
-                                                <select class="form-control input-lg">
-                                                    <option selected="">--Εθνικότητα</option>
-                                                    <option value="afghan">Afghan</option>
-                                                    <option value="albanian">Albanian</option>
-                                                    <option value="algerian">Algerian</option>
-                                                    <option value="american">American</option>
-                                                    <option value="andorran">Andorran</option>
-                                                    <option value="angolan">Angolan</option>
-                                                    <option value="antiguans">Antiguans</option>
-                                                    <option value="argentinean">Argentinean</option>
-                                                    <option value="armenian">Armenian</option>
-                                                    <option value="australian">Australian</option>
-                                                    <option value="austrian">Austrian</option>
-                                                    <option value="azerbaijani">Azerbaijani</option>
-                                                    <option value="bahamian">Bahamian</option>
-                                                    <option value="bahraini">Bahraini</option>
-                                                    <option value="bangladeshi">Bangladeshi</option>
-                                                    <option value="barbadian">Barbadian</option>
-                                                </select>
-                                            </div>
+                                        <div class="form-group mb-4">
+                                            <select class="form-control input-lg">
+                                                <option selected="">--Εθνικότητα</option>
+                                                <option value="afghan">Afghan</option>
+                                                <option value="albanian">Albanian</option>
+                                                <option value="algerian">Algerian</option>
+                                                <option value="american">American</option>
+                                                <option value="andorran">Andorran</option>
+                                                <option value="angolan">Angolan</option>
+                                                <option value="antiguans">Antiguans</option>
+                                                <option value="argentinean">Argentinean</option>
+                                                <option value="armenian">Armenian</option>
+                                                <option value="australian">Australian</option>
+                                                <option value="austrian">Austrian</option>
+                                                <option value="azerbaijani">Azerbaijani</option>
+                                                <option value="bahamian">Bahamian</option>
+                                                <option value="bahraini">Bahraini</option>
+                                                <option value="bangladeshi">Bangladeshi</option>
+                                                <option value="barbadian">Barbadian</option>
+                                            </select>
+                                        </div>
 
-                                            <div class="form-group has-success mb-4">
-                                                <p class="form-control  datepicker " placeholder="'Ονομα" name="name" value="" type="text" required>
+                                        <div class="form-group has-success mb-4">
+                                            <p class="form-control  datepicker " placeholder="'Ονομα" name="name" value="" type="text" required>
 
-                                                    <button class="btn btn-transparent" type="button"><i class="fa fa-calendar"></i> <input type="text" class="datepicker" placeholder="Ημερομηνία γέννησης"></button>
-                                            </div>
+                                                <button class="btn btn-transparent" type="button"><i class="fa fa-calendar"></i> <input type="text" class="datepicker" placeholder="Ημερομηνία γέννησης"></button>
+                                        </div>
 
-                                        </fieldset>
-                                    </div>
+                                    </fieldset>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- 6th card -->
-                <div class="col-lg-6 ml-4 d-none" id="displayCard6">
-                    <div class="accordion" id="accordionExample6">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header " id="headingOne">
-                                <button class="accordion-button text-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne6" aria-expanded="true" aria-controls="collapseOne6">
-                                    <h3 class="text-center">Επιβάτης 7 </h3>
-                                </button>
-                            </h2>
-                            <div id="collapseOne6" class="accordion-collapse collapse hide" aria-labelledby="headingOne" data-bs-parent="#accordionExample6">
-                                <div class="accordion-body">
-                                    <div class="card card-body  ">
+            </div>
+            <!-- 6th card -->
+            <div class="col-lg-6 ml-4 d-none" id="displayCard6">
+                <div class="accordion" id="accordionExample6">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header " id="headingOne">
+                            <button class="accordion-button text-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne6" aria-expanded="true" aria-controls="collapseOne6">
+                                <h3 class="text-center">Επιβάτης 7 </h3>
+                            </button>
+                        </h2>
+                        <div id="collapseOne6" class="accordion-collapse collapse hide" aria-labelledby="headingOne" data-bs-parent="#accordionExample6">
+                            <div class="accordion-body">
+                                <div class="card card-body  ">
 
 
-                                        <fieldset>
-                                            <div class="form-group has-error mb-4">
-                                                <input class="form-control input-lg" placeholder="Eπώνυμο" name="lastname" value="" type="text" required>
-                                            </div>
-                                            <div class="form-group has-success mb-4">
-                                                <input class="form-control input-lg" placeholder="'Ονομα" name="name" value="" type="text" required>
-                                            </div>
+                                    <fieldset>
+                                        <div class="form-group has-error mb-4">
+                                            <input class="form-control input-lg" placeholder="Eπώνυμο" name="lastname" value="" type="text" required>
+                                        </div>
+                                        <div class="form-group has-success mb-4">
+                                            <input class="form-control input-lg" placeholder="'Ονομα" name="name" value="" type="text" required>
+                                        </div>
 
-                                            <div class="form-group mb-4">
-                                                <select class="form-control input-lg">
-                                                    <option selected="">--Εθνικότητα</option>
-                                                    <option value="afghan">Afghan</option>
-                                                    <option value="albanian">Albanian</option>
-                                                    <option value="algerian">Algerian</option>
-                                                    <option value="american">American</option>
-                                                    <option value="andorran">Andorran</option>
-                                                    <option value="angolan">Angolan</option>
-                                                    <option value="antiguans">Antiguans</option>
-                                                    <option value="argentinean">Argentinean</option>
-                                                    <option value="armenian">Armenian</option>
-                                                    <option value="australian">Australian</option>
-                                                    <option value="austrian">Austrian</option>
-                                                    <option value="azerbaijani">Azerbaijani</option>
-                                                    <option value="bahamian">Bahamian</option>
-                                                    <option value="bahraini">Bahraini</option>
-                                                    <option value="bangladeshi">Bangladeshi</option>
-                                                    <option value="barbadian">Barbadian</option>
-                                                </select>
-                                            </div>
+                                        <div class="form-group mb-4">
+                                            <select class="form-control input-lg">
+                                                <option selected="">--Εθνικότητα</option>
+                                                <option value="afghan">Afghan</option>
+                                                <option value="albanian">Albanian</option>
+                                                <option value="algerian">Algerian</option>
+                                                <option value="american">American</option>
+                                                <option value="andorran">Andorran</option>
+                                                <option value="angolan">Angolan</option>
+                                                <option value="antiguans">Antiguans</option>
+                                                <option value="argentinean">Argentinean</option>
+                                                <option value="armenian">Armenian</option>
+                                                <option value="australian">Australian</option>
+                                                <option value="austrian">Austrian</option>
+                                                <option value="azerbaijani">Azerbaijani</option>
+                                                <option value="bahamian">Bahamian</option>
+                                                <option value="bahraini">Bahraini</option>
+                                                <option value="bangladeshi">Bangladeshi</option>
+                                                <option value="barbadian">Barbadian</option>
+                                            </select>
+                                        </div>
 
-                                            <div class="form-group has-success mb-4">
-                                                <p class="form-control  datepicker " placeholder="'Ονομα" name="name" value="" type="text" required>
+                                        <div class="form-group has-success mb-4">
+                                            <p class="form-control  datepicker " placeholder="'Ονομα" name="name" value="" type="text" required>
 
-                                                    <button class="btn btn-transparent" type="button"><i class="fa fa-calendar"></i> <input type="text" class="datepicker" placeholder="Ημερομηνία γέννησης"></button>
-                                            </div>
+                                                <button class="btn btn-transparent" type="button"><i class="fa fa-calendar"></i> <input type="text" class="datepicker" placeholder="Ημερομηνία γέννησης"></button>
+                                        </div>
 
-                                        </fieldset>
-                                    </div>
+                                    </fieldset>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
         </div>
         </div>
@@ -934,6 +977,18 @@
             g.classList.add("col-lg-6", "ml-4", "d-none");
         }
     }
+</script>
+
+<script>
+    // Vanilla JavaScript
+    document.addEventListener('DOMContentLoaded', function() {
+        myStepper = new Stepper(document.querySelector('#stepper-example'))
+    })
+
+    // As a jQuery Plugin
+    $(document).ready(function() {
+        var myStepper = new Stepper($('#stepper-example'))
+    })
 </script>
 
 </html>

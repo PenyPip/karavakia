@@ -4,6 +4,7 @@
 @include('layouts.navbar')
 
 <body>
+<header class="passengerDetails">
     <div class="container">
         <div class="payment" style="display:grid; grid-template-columns: 2fr 2fr; margin-top:40px; margin-bottom:40px; padding-left:150px; padding-right:150px;">
             <div class="pay-by-card">
@@ -78,6 +79,7 @@
             </div>
         </div>
     </div>
+</header>
     <!--Formatted input for card info-->
     <script>
         (function() {
