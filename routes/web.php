@@ -76,7 +76,3 @@ Route::get('/new-navbar', function () {
 Route::get('/new-navbar-dropdown', function () {
    return view('new-navbar-dropdown');
 });
-
-Route::get('/homepageNew', function () {
-   return view('homepageNew');
-});
