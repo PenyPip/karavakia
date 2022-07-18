@@ -122,7 +122,7 @@
                 <a class="navbar-brand" href="#"><img src="images/flag-cs.png"></a>
                 <a class="navbar-brand" href="#"><img src="images/flag-hu.png"></a>
             </nav>
-            <a class="btn btn-primary" href="#signup">Sign Up</a>
+            <a class="btn btn-primary" href="/loginf">Login</a>
         </div>
     </nav>
 

@@ -3250,7 +3250,7 @@ textarea.form-control-lg {
 }
 .btn-light:disabled, .btn-light.disabled {
   color: #000;
-  background-color: #f8f9fa;
+  background-color: #ffffff;
   border-color: #f8f9fa;
 }
 
@@ -4529,10 +4529,10 @@ textarea.form-control-lg {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #ffffff5c;
+  background-color: #ffffff;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+  border: 5px solid rgb(11 63 130);  
+  border-radius: 1.25rem;
 }
 .card > hr {
   margin-right: 0;
@@ -4744,27 +4744,38 @@ textarea.form-control-lg {
   border: 1px solid rgba(0, 0, 0, 0.125);
 }
 .accordion-item:first-of-type {
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
+  /* border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem; */
+  border-radius: 1.25rem;
+
 }
 .accordion-item:first-of-type .accordion-button {
-  border-top-left-radius: calc(0.25rem - 1px);
-  border-top-right-radius: calc(0.25rem - 1px);
+  /* border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px); */
+  border-radius: 1.25rem;
+  border: 5px solid rgb(11 63 130);  
+
 }
 .accordion-item:not(:first-of-type) {
   border-top: 0;
 }
 .accordion-item:last-of-type {
-  border-bottom-right-radius: 0.25rem;
-  border-bottom-left-radius: 0.25rem;
+  /* border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem; */
+  border-radius: 1.25rem;
+
 }
 .accordion-item:last-of-type .accordion-button.collapsed {
-  border-bottom-right-radius: calc(0.25rem - 1px);
-  border-bottom-left-radius: calc(0.25rem - 1px);
+  /* border-bottom-right-radius: calc(0.25rem - 1px);
+  border-bottom-left-radius: calc(0.25rem - 1px); */
+  border-radius: 1.25rem;
+
 }
 .accordion-item:last-of-type .accordion-collapse {
-  border-bottom-right-radius: 0.25rem;
-  border-bottom-left-radius: 0.25rem;
+  /* border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem; */
+  border-radius: 1.25rem;
+
 }
 
 .accordion-body {
@@ -11332,7 +11343,7 @@ header.passengerDetails {
   padding-bottom: 8rem; 
 
   min-height:100%;
-  background:linear-gradient(0deg, rgba(73, 95, 176, 0.3), rgba(0, 72, 150, 0.3)), url("../images/spetses-pegasus-cruises.jpg");
+  background:linear-gradient(0deg, rgba(73, 95, 176, 0.3), rgb(0 72 150 / 80%));
   background-size:cover;
 }
 

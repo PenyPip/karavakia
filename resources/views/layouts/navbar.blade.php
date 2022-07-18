@@ -14,9 +14,12 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+    <link href="css/choices.css" rel="stylesheet" />
+
 
     <link rel="stylesheet" href="js/jquery-ui.css">
+    <link href="css/stepper.css" rel="stylesheet" />
+        <script src="https://unpkg.com/bs-stepper/dist/js/bs-stepper.min.js"></script>
 
     <style>
         .btn-circle.btn-xl {
@@ -28,6 +31,7 @@
             text-align: center;
             margin-right: 10px;
         }
+
         .btn-circle.btn-sm {
             width: 40px;
             height: 40px;
@@ -37,6 +41,7 @@
             text-align: center;
             margin-right: 10px;
         }
+
         .container-counter {
             margin-top: 100px;
             margin-bottom: 100px;
@@ -91,7 +96,7 @@
 <nav class="navbar navbar-light bg-custom static-top">
         <div class="container">
 
-        <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="#">
                 <img src="images/pegasusLogo.png" alt="Girl in a jacket" width="190" height="60">
             </a>
             <nav class="navbar navbar-light">
@@ -115,6 +120,16 @@
             <nav class="navbar navbar-light">
                 <a class="navbar-brand" href="#" style="color: #fff; font-size: 15px;">CONTACT</a>
             </nav>
-            <a class="btn btn-primary" href="#signup">Sign Up</a>
+            <nav class="navbar navbar-light">
+                <a class="navbar-brand" href="#"><img src="images/flag-en.png"></a>
+                <a class="navbar-brand" href="#"><img src="images/flag-fr.png"></a>
+                <a class="navbar-brand" href="#"><img src="images/flag-sr.png"></a>
+                <a class="navbar-brand" href="#"><img src="images/flag-ru.png"></a>
+                <a class="navbar-brand" href="#"><img src="images/flag-ro.png"></a>
+                <a class="navbar-brand" href="#"><img src="images/flag-pl.png"></a>
+                <a class="navbar-brand" href="#"><img src="images/flag-cs.png"></a>
+                <a class="navbar-brand" href="#"><img src="images/flag-hu.png"></a>
+            </nav>
+            <a class="btn btn-primary" href="/loginf">Login</a>
         </div>
     </nav>

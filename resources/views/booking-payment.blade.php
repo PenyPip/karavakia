@@ -4,80 +4,137 @@
 @include('layouts.navbar')
 
 <body>
-    <div class="container">
-        <div class="payment" style="display:grid; grid-template-columns: 2fr 2fr; margin-top:40px; margin-bottom:40px; padding-left:150px; padding-right:150px;">
-            <div class="pay-by-card">
-                <h1 style="font-size:22px; text-align:center; text-decoration:underline 2px #245ED6; margin-bottom:20px;">Στοιχεία πληρωμής</h1>
-                <!-- Form for Card processing -->
-                <form class="needs-validation" novalidate>
-                    <div class="form-row">
-                        <div class="col-md-4 mb-3" style="width:100%;">
-                            <label for="validationCustom01" style="margin-bottom:5px;">Αριθμός κάρτας</label>
-                            <input style="border-color:#245ed6;" name="card-num" type="text" class="form-control" id="validationCustom01" placeholder="0000 0000 0000 0000" value="" autocomplete="cc-number" minlength="19" maxlength="19" size="18" id="cr_no" required>
-                            <div class="valid-feedback">
-                                Φαίνεται εντάξει!
+    <header class="passengerDetails">
+        <div class="container">
+            <!-- stepper -->
+
+            <div id="stepper-example" class="bs-stepper">
+                <div class="bs-stepper-header">
+                    <div class="step" data-target="#test-l-1">
+                        <a href="/homeSearch">
+                            <div class="active">
+                                <span class="bs-stepper-circle"><i class="fa fa-ship fa-lg"></i></span>
                             </div>
-                        </div>
-                        <div class="col-md-4 mb-3" style="width:100%;">
-                            <label for="validationCustom02" style="margin-bottom:5px;">Ημερομηνία λήξης</label>
-                            <input style="border-color:#245ed6;" name="exp" type="text" class="form-control" id="validationCustom02" placeholder="ΜΜ/ΕΕ" value="" autocomplete="cc-exp" size="6" id="exp" minlength="5" maxlength="5" required>
-                            <div class="valid-feedback">
-                                Φαίνεται εντάξει!
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-3" style="width:100%;">
-                            <label for="validationCustom03" style="margin-bottom:5px;">Αριθμός CVV/CVC</label>
-                            <input style="border-color:#245ed6;" name="cvv" type="password" class="form-control" id="validationCustom02" placeholder="000" value="" autocomplete="cc-csc" size="3" minlength="3" maxlength="3" required>
-                            <div class="valid-feedback">
-                                Φαίνεται εντάξει!
-                            </div>
-                        </div>
+                        </a>
                     </div>
-                    <div class="form-row">
-                        <div class="col-md-6 mb-3" style="width:100%;">
-                            <label for="validationCustom04" style="margin-bottom:5px;">Πλήρες όνομα κατόχου</label>
-                            <input style="border-color:#245ed6;" type="text" class="form-control" id="validationCustom03" placeholder="Όνομα & Επώνυμο" autocomplete="cc-name" pattern="[\p{L} \-\.]+" required>
-                            <div class="invalid-feedback">
-                                Παρακαλώ συμπληρώστε έγκυρο oνοματεπώνυμο.
+                    <div class="line"></div>
+                    <div class="step" data-target="#test-l-2">
+                        <a href="/passengerDetails">
+                            <div class="active">
+                                <span class="bs-stepper-circle"><i class="fa fa-pencil fa-lg"></i></span>
                             </div>
-                        </div>
+                        </a>
                     </div>
-                    <div class="form-group" style="width:100%;">
-                        <div class="form-check">
-                            <input style="border-color:#245ed6;" class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                            <label class="form-check-label" for="invalidCheck">
-                                Συμφωνώ με τους <a href="#">όρους</a> και τις <a href="#">προϋποθέσεις</a>.
-                            </label>
-                            <div class="invalid-feedback">
-                                Θα πρέπει να συμφωνήσετε με τους όρους και τις προϋποθέσεις πρωτού προχωρήσετε.
-                            </div>
-                        </div>
+                    <div class="line"></div>
+                    <div class="step" data-target="#test-l-3">
+                        <a href="booking-payment">
+                            <span class="bs-stepper-circle"><i class="fa fa-credit-card fa-lg"></i></span>
+                        </a>
                     </div>
-                    <button class="btn btn-primary" type="submit" style="margin-top:20px;">Ολοκλήρωση κράτησης</button>
-                </form>
+                </div>
+                <div class="bs-stepper-content">
+                    <div id="test-l-1" class="content">
+                        <p class="text-center">test 1</p>
+                        <button class="btn btn-primary" onclick="myStepper.next()">Next</button>
+                    </div>
+                    <div id="test-l-2" class="content">
+                        <p class="text-center">test 2</p>
+                        <button class="btn btn-primary" onclick="myStepper.next()">Next</button>
+                    </div>
+                    <div id="test-l-3" class="content">
+                        <p class="text-center">test 3</p>
+                        <button class="btn btn-primary" onclick="myStepper.next()">Next</button>
+                        <button class="btn btn-primary" onclick="myStepper.previous()">Previous</button>
+                    </div>
+                </div>
             </div>
-            <div class="booking-info" style="margin-left:140px;">
-                <h2 style="font-size:22px; text-align:center; text-decoration:underline 2px #245ED6; margin-bottom:20px;">Πληροφορίες Κράτησης<h2>
-                        <table>
-                            <tr>
-                                <td style="font-size:16px; color:#212529; border-bottom: 1px solid #245ed6; border-right: 1px dotted #245ed6; font-weight:normal; padding-top: 15px; padding-bottom: 15px; padding-left: 10px; padding-right: 10px;">Όνομα 1ου προϊόντος</td>
-                                <td style="font-size:16px; color:#212529; border-bottom: 1px solid #245ed6; font-weight:normal; padding-left: 10px; padding-right: 10px;">Τιμή 1ου προϊόντος</td>
-                            </tr>
-                            <tr>
-                                <td style="font-size:16px; color:#212529; border-bottom: 1px solid #245ed6; border-right: 1px dotted #245ed6; font-weight:normal; padding-top: 15px; padding-bottom: 15px; padding-left: 10px; padding-right: 10px;">Όνομα 2ου προϊόντος</td>
-                                <td style="font-size:16px; color:#212529; border-bottom: 1px solid #245ed6; font-weight:normal; padding-left: 10px; padding-right: 10px;">Τιμή 2ου προϊόντος</td>
-                            </tr>
-                            <td></td>
-                            <td style="text-align:right; font-size:16px; color:#212529; font-weight:normal; padding-top: 15px; padding-bottom: 15px; padding-left: 10px; padding-right: 10px;"><i>ΦΠΑ: Συνολικό Ποσό</i></td>
-                            </tr>
-                            <td></td>
-                            <td style="text-align:right; font-size:16px; color:#212529; font-weight:normal; padding-top: 15px; padding-bottom: 15px; padding-left: 10px; padding-right: 10px;">Τελική τιμή: <font style="font-weight:bold;">Κόστος</font>
-                            </td>
-                            </tr>
-                        </table>
+
+            <!--  -->
+        <div class="row">
+            <div class="col-lg-6 ml-4 mb-4">
+                <div class="pay-by-card">
+                    <div class="card card-body  ">
+                        <h3 class="text-center mb-4">Στοιχεία πληρωμής</h3>
+
+                        <h1 style="font-size:22px; text-align:center; text-decoration:underline 2px #245ED6; margin-bottom:20px;"></h1>
+                        <!-- Form for Card processing -->
+                        <form class="needs-validation" novalidate>
+                            <div class="form-row">
+                                <div class="col-md-4 mb-3" style="width:100%;">
+                                    <label for="validationCustom01" style="margin-bottom:5px;">Αριθμός κάρτας</label>
+                                    <input style="border-color:#245ed6;" name="card-num" type="text" class="form-control" id="validationCustom01" placeholder="0000 0000 0000 0000" value="" autocomplete="cc-number" minlength="19" maxlength="19" size="18" id="cr_no" required>
+                                    <div class="valid-feedback">
+                                        Φαίνεται εντάξει!
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3" style="width:100%;">
+                                    <label for="validationCustom02" style="margin-bottom:5px;">Ημερομηνία λήξης</label>
+                                    <input style="border-color:#245ed6;" name="exp" type="text" class="form-control" id="validationCustom02" placeholder="ΜΜ/ΕΕ" value="" autocomplete="cc-exp" size="6" id="exp" minlength="5" maxlength="5" required>
+                                    <div class="valid-feedback">
+                                        Φαίνεται εντάξει!
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3" style="width:100%;">
+                                    <label for="validationCustom03" style="margin-bottom:5px;">Αριθμός CVV/CVC</label>
+                                    <input style="border-color:#245ed6;" name="cvv" type="password" class="form-control" id="validationCustom02" placeholder="000" value="" autocomplete="cc-csc" size="3" minlength="3" maxlength="3" required>
+                                    <div class="valid-feedback">
+                                        Φαίνεται εντάξει!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-6 mb-3" style="width:100%;">
+                                    <label for="validationCustom04" style="margin-bottom:5px;">Πλήρες όνομα κατόχου</label>
+                                    <input style="border-color:#245ed6;" type="text" class="form-control" id="validationCustom03" placeholder="Όνομα & Επώνυμο" autocomplete="cc-name" pattern="[\p{L} \-\.]+" required>
+                                    <div class="invalid-feedback">
+                                        Παρακαλώ συμπληρώστε έγκυρο oνοματεπώνυμο.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group" style="width:100%;">
+                                <div class="form-check">
+                                    <input style="border-color:#245ed6;" class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                    <label class="form-check-label" for="invalidCheck">
+                                        Συμφωνώ με τους <a href="#">όρους</a> και τις <a href="#">προϋποθέσεις</a>.
+                                    </label>
+                                    <div class="invalid-feedback">
+                                        Θα πρέπει να συμφωνήσετε με τους όρους και τις προϋποθέσεις πρωτού προχωρήσετε.
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary" type="submit" style="margin-top:20px;">Ολοκλήρωση κράτησης</button>
+                        </form>
+                    </div>
+                </div>             
             </div>
+<!--  -->
+                <div class="col-lg-4 ml-4 mb-4">
+                    <div class="card card-body  ">
+                        <h3 class="text-center mb-4">Πληροφορίες Κράτησης</h3>
+                        <h2 style="font-size:22px; text-align:center; text-decoration:underline 2px #245ED6; margin-bottom:20px;">Πληροφορίες Κράτησης<h2>
+                                <table>
+                                    <tr>
+                                        <td style="font-size:16px; color:#212529; border-bottom: 1px solid #245ed6; border-right: 1px dotted #245ed6; font-weight:normal; padding-top: 15px; padding-bottom: 15px; padding-left: 10px; padding-right: 10px;">Όνομα 1ου προϊόντος</td>
+                                        <td style="font-size:16px; color:#212529; border-bottom: 1px solid #245ed6; font-weight:normal; padding-left: 10px; padding-right: 10px;">Τιμή 1ου προϊόντος</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="font-size:16px; color:#212529; border-bottom: 1px solid #245ed6; border-right: 1px dotted #245ed6; font-weight:normal; padding-top: 15px; padding-bottom: 15px; padding-left: 10px; padding-right: 10px;">Όνομα 2ου προϊόντος</td>
+                                        <td style="font-size:16px; color:#212529; border-bottom: 1px solid #245ed6; font-weight:normal; padding-left: 10px; padding-right: 10px;">Τιμή 2ου προϊόντος</td>
+                                    </tr>
+                                    <td></td>
+                                    <td style="text-align:right; font-size:16px; color:#212529; font-weight:normal; padding-top: 15px; padding-bottom: 15px; padding-left: 10px; padding-right: 10px;"><i>ΦΠΑ: Συνολικό Ποσό</i></td>
+                                    </tr>
+                                    <td></td>
+                                    <td style="text-align:right; font-size:16px; color:#212529; font-weight:normal; padding-top: 15px; padding-bottom: 15px; padding-left: 10px; padding-right: 10px;">Τελική τιμή: <font style="font-weight:bold;">Κόστος</font>
+                                    </td>
+                                    </tr>
+                                </table>
+                    </div>
+                </div>
+                </div>
         </div>
-    </div>
+        </div>
+    </header>
     <!--Formatted input for card info-->
     <script>
         (function() {
