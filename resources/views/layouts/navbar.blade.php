@@ -209,9 +209,9 @@
                 <button class="dropbtn">
                     CRUISES
                 </button>
-                <div class="dropdown-content" style="width: 300px;">
-                    <a href="/cruise-hydra-spetses-from-tolo">Hydra & Spetses from Tolo</a>
-                    <a href="/cruise-skiathos-koukounaries-from-glyfa">Skiathos & Koukounaries from Glyfa</a>
+                <div class="dropdown-content" style="width: 380px;">
+                    <a href="/cruise-hydra-spetses-from-tolo">HYDRA & SPETSES FROM TOLO</a>
+                    <a href="/cruise-skiathos-koukounaries-from-glyfa">SKIATHOS & KOUKOUNARIES FROM GLYFA</a>
                 </div>
             </div>
         </nav>
