@@ -26,14 +26,15 @@
 
         <div class="container ">
             <h1 class="text-center text-custom">Αναζήτηση ημερήσιας κρουαζιέρας</h1>
-            <div class="row mb-2">
-                <div class="col-md-6 offset-md-3">
-                    <div class="card border-0">
-                        <div class="card-body p-0">
 
-                            <!-- AUTO COMPLETE DROPDOWN -->
-                            <select class="selectpicker form-control-lg border-2 mb-1 px-4 py-4 rounded shadow">
-                                <option hidden value="placeholder">Επιλέξτε ημερήσια κρουαζιέρα</option>
+                <div class="row mb-2">
+                    <div class="col-md-6 offset-md-3">
+                        <div class="card border-0">
+                            <div class="card-body p-0">
+
+                                <!-- AUTO COMPLETE DROPDOWN -->
+                                <select class="selectpicker form-control-lg border-2 px-4 py-4 rounded shadow">
+                                    <option hidden value="placeholder">Επιλογή ημερήσιας διαδρομής</option>
                                 @foreach ($destinations as $destination)
                                 <option value="{{ $destination->id }}">{{ $destination->name }}</option>
                                 @endforeach
@@ -43,23 +44,11 @@
                     </div>
                 </div>
 
-            </div>
-            <div class="row mb-2 ">
-                <!-- <div class="col-lg-8">
-                        <div class="card border-0">
-                            <div class="card-body p-0">
-                                <select class="form-select form-select-lg" aria-label=".form-select-lg example">
-                                    <option selected>Επιλογή κατηγορίας επιβάτη</option>
-                                    <option value="1">Ενήλικος  25$</option>
-                                    <option value="2">Ανήλικος  15$</option>
-                                    <option value="3">Φοιτητής  18$</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div> -->
-                <div class="col-md-6 offset-md-3 mb-2">
-                    <div class="d-grid gap-2">
-                        <button class="btn-lg btn-light" type="button" disabled><i class="fa fa-calendar"></i> <input type="text" class="datepicker" placeholder="Επιλέξτε ημερομηνία"></button>
+                <div class="row mb-2 ">
+                   
+                    <div class="col-md-6 offset-md-3 mb-2">
+                        <div class="d-grid gap-2">
+                            <button class="btn-lg btn-light" type="button" disabled><i class="fa fa-calendar"></i> <input type="text" class="datepicker" placeholder="Επιλέξτε ημερομηνία"></button>
 
                     </div>
                 </div>
@@ -76,28 +65,8 @@
                     </div>
                 </div>
 
-            </div>
 
-            <!-- <div class="row">
-                    <div class="col-lg-4">
-                        <div class="d-grid gap-2">
-                            <button class="btn-lg btn-light" type="button" disabled>Προσθήκη εισητηρίου</button>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 d-flex justify-content-center">
-                        <div class="row">
-                            <button type="button" class="btn btn-custom btn-circle btn-xl px-2" onClick="onClickAdd()"><i class="fa fa-plus"></i> </button>
-                            <button class="btn btn-custom btn-circle btn-xl"><a id="clicks">0</a></button>
-                            <button type="button" class="btn btn-custom btn-circle btn-xl px-2" onClick="onClickRemove()"><i class="fa fa-minus"></i> </button>
-
-                        </div>
-                    </div>
-
-
-
-                </div> -->
-
+             
 
         </div>
 
