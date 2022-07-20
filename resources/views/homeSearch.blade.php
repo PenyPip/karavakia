@@ -26,15 +26,16 @@
 
         <div class="container ">
             <h1 class="text-center text-custom">Αναζήτηση ημερήσιας κρουαζιέρας</h1>
+            <div class="row">
 
-                <div class="row mb-2">
-                    <div class="col-md-6 offset-md-3">
-                        <div class="card border-0">
-                            <div class="card-body p-0">
+                <div class="col-md-6 offset-md-3 mb-2">
+                    <div class="card border-0">
+                        <div class="d-grid gap-2">
 
-                                <!-- AUTO COMPLETE DROPDOWN -->
-                                <select class="selectpicker form-control-lg border-2 px-4 py-4 rounded shadow">
-                                    <option hidden value="placeholder">Επιλογή ημερήσιας διαδρομής</option>
+
+                            <!-- AUTO COMPLETE DROPDOWN -->
+                            <select class="selectpicker form-control-lg border-2 px-4 py-4 rounded shadow">
+                                <option hidden value="placeholder">Επιλογή ημερήσιας διαδρομής</option>
                                 @foreach ($destinations as $destination)
                                 <option value="{{ $destination->id }}">{{ $destination->name }}</option>
                                 @endforeach
@@ -43,12 +44,12 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="row mb-2 ">
 
-                <div class="row mb-2 ">
-                   
-                    <div class="col-md-6 offset-md-3 mb-2">
-                        <div class="d-grid gap-2">
-                            <button class="btn-lg btn-light" type="button" disabled><i class="fa fa-calendar"></i> <input type="text" class="datepicker" placeholder="Επιλέξτε ημερομηνία"></button>
+                <div class="col-md-6 offset-md-3 mb-2">
+                    <div class="d-grid gap-2">
+                        <button class="btn-lg btn-light" type="button" disabled><i class="fa fa-calendar"></i> <input type="text" class="datepicker" placeholder="Επιλέξτε ημερομηνία"></button>
 
                     </div>
                 </div>
@@ -66,9 +67,9 @@
                 </div>
 
 
-             
 
-        </div>
+
+            </div>
 
     </header>
 
