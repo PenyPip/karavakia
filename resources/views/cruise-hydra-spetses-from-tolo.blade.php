@@ -295,22 +295,19 @@
         <div class="col-4 ml-2">
             <header class="sidebox  ">
 
-                <div class="container mt-1 ">
-                    <div class="d-flex justify-content-center">
-                        <button class="btn-lg btn-light" type="button" disabled>
-                            <select class="selectpicker form-control-lg border-2 px-4 py-4 rounded shadow">
-                                <option hidden value="placeholder">Επιλογή ημερήσιας διαδρομής</option>
+                <div>
+                    
+                <div class="d-grid gap-2 mb-2">
+                <select class="selectpicker form-control-lg border-2 px-4 py-4 rounded shadow">
+                        <option hidden value="placeholder">Επιλογή ημερήσιας διαδρομής</option>
+                        @foreach ($destinations as $destination)
+                        <option value="{{ $destination->id }}">{{ $destination->name }}</option>
+                        @endforeach
 
-
-                            </select>
-                        </button>
+                    </select>
                     </div>
                     <!-- AUTO COMPLETE DROPDOWN -->
-                    <!-- <select class="selectpicker form-control-lg border-2 px-4 py-4 rounded shadow">
-                                        <option hidden value="placeholder">Επιλογή ημερήσιας διαδρομής</option>
-
-
-                                    </select> -->
+                    
 
                     <div class="d-grid gap-2 mb-2">
                         <button class="btn-lg btn-light" type="button" disabled><i class="fa fa-calendar"></i> <input type="text" class="datepicker" placeholder="Επιλέξτε ημερομηνία"></button>
@@ -792,7 +789,7 @@
                     </div>
                 </div>
 
-        </div>
+    </div>
     </div>
     </header>
 
@@ -1174,5 +1171,49 @@
         }
     }
 </script>
+<!-- Include Choices JavaScript (latest) -->
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
 
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script>
+    /* ==============================================
+    CUSTOM SELECT
+  ============================================== */
+    const sorting = document.querySelector('.selectpicker');
+    const commentSorting = document.querySelector('.selectpicker');
+    const sortingchoices = new Choices(sorting, {
+        placeholder: false,
+        itemSelectText: ''
+    });
+    // Trick to apply your custom classes to generated dropdown menu
+    let sortingClass = sorting.getAttribute('class');
+    window.onload = function() {
+        sorting.parentElement.setAttribute('class', sortingClass);
+    }
+    $(".datepicker").datepicker({
+        minDate: ('+1d'),
+        dateFormat: 'dd/mm/yy',
+        beforeShowDay: function(date) {
+            var string = jQuery.datepicker.formatDate('yy-mm-dd', date);
+            var isEnabled = (EnableDates.indexOf(string) != -1); // used to enable if its a route
+            return [isEnabled];
+        },
+        changeMonth: true,
+        changeYear: true
+    });
+    var EnableDates = new Array(); // this array will store the routes dates after being extracted form the JSON
+    $.ajax({
+        url: 'js/routes-daysoff.json', //example jason
+        method: 'GET',
+        dataType: 'json',
+        success: function(data) {
+            // now the data is loaded and we will traverse over the "athens-aigina" 's route and create an array to of dates of routes
+            var listOfRoutes = data['athens-aigina'].routes; //here will be the var that comes from the destination inputs exp"athens-aigina" or "athens-thasos"
+            for (var i in listOfRoutes) {
+                EnableDates.push(listOfRoutes[i].date); // push the date to our array for checking afterwards
+            }
+        }
+    });
+</script>
 </html>
