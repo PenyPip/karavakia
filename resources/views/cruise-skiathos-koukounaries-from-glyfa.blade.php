@@ -48,15 +48,21 @@
                 <h1 style="font-weight:bold; font-size:24px;">
                     SKIATHOS & KOUKOUNARIES BEACH FROM GLYFA
                 </h1>
-                <p style="text-align:right;">
+                <p style="text-align:right; margin-top:-40px;">
                     Code: LMJUYH
                 </p>
                 </hr>
                 <div style="display:grid; grid-template-columns: 1fr 1fr 1fr">
-                    <p>One day cruise
-                    </p>
-                    <p><a href="#">GREECE</a>, <a href="#">CRUISE</a>, <a href="#">SPORADES</a></p>
-                    <p>(Social media icons)</p>
+                    <div style="text-align:left;">
+                        <p>One day cruise
+                        </p>
+                    </div>
+                    <div style="text-align:center;">
+                        <p><a href="#">GREECE</a>, <a href="#">CRUISE</a>, <a href="#">SPORADES</a></p>
+                    </div>
+                    <div style="text-align:right;">
+                        <p><a href="https://www.facebook.com/PegasusCruises/" style="font-size:20px;"><i class="fa fa-facebook" style="padding-right:10px;"></i></a><a href="https://www.tripadvisor.com.gr/Attraction_Review-g1007321-d11150092-Reviews-Pegasus_Cruises-Tolon_Argolis_Region_Peloponnese.html" style="font-size:20px;"><i class="fa fa-tripadvisor"></i></a></p>
+                    </div>
                 </div>
                 <!-- carousel2 -->
                 <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -93,9 +99,9 @@
                 </div>
                 <!-- carousel end -->
 
-                <h3><b>Description</b></h3>
+                <h3 style="margin-top:20px;"><b>Description</b></h3>
                 <div style="display:grid; grid-template-columns: 1fr 1fr;">
-                    <div>
+                    <div style="margin-right:20px;">
 
                         <p>One-day cruise with PEGASUS CRUISES departing from Glyfa for the enchanting island of Skiathos and the lovely beach of Koukounaries.
 
@@ -171,7 +177,7 @@
                         </tbody>
                     </table>
                     <hr>
-                    <div style="background:#ffb300; color:#fff; font-size:18px; font-weight:bold; text-align:center;">
+                    <div style="background:#ffb300; color:#fff; font-size:18px; font-weight:bold; text-align:center; border-radius:5px;">
                         <p>Choose the Tavern – Restaurant of your choice</br>
                             Food in Skiathos – Food in Koukounaries</br>
 
@@ -179,10 +185,10 @@
                     </div>
                     <p> You will have plenty of time to swim in the beautiful beach of Koukounaries and eat in the beautiful taverns of Skiathos. For the rest of the day enjoy the comforts of our ships our indoor air-conditioned lounges and our deck.</p>
 
-                    <div style="background: #113f82; color:#fff; font-weight:bold;">
-                        <p>ROUTE: Glyfa – Skiathos – Koukounaries – Glyfa</p>
+                    <div style="background: #113f82; color:#fff; font-weight:bold; border-radius:5px;">
+                        <p style="padding-left:10px; padding-right:10px; padding-top:5px; padding-bottom:5px;">ROUTE: Glyfa – Skiathos – Koukounaries – Glyfa</p>
                     </div>
-                    <img src="images/pegasus-glifa-koukounaries-skiathos.jpg" style="width:683px; height:377px;" />
+                    <img src="images/pegasus-glifa-koukounaries-skiathos.jpg" style="width:100%; height:auto;" />
                     <h3><b>Itinerary</b></h3>
                     <div class="itinerary-structure" style="display:grid; grid-template-columns:1fr 10fr;">
                         <div class="itenerary-circles">
@@ -269,7 +275,7 @@
                     <p>Bus: there is a bus 2 times a day for Glyfa with KTEL STYLIDAS.</p>
                     <p>Car: The distance is 59 klms and the average estimated travelling time is 30 minutes.</p>
                     <h3><b>MAP</b></h3>
-                    <img src="images/pegasus-glifa-koukounaries-skiathos.jpg" style="width:683px; height:377px;">
+                    <img src="images/pegasus-glifa-koukounaries-skiathos.jpg" style="width:100%; height:auto;">
                 </div>
                 <!--
                     <div class=" tour-booking-panel" margin-top: -25px>

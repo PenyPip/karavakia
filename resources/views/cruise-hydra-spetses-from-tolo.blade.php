@@ -47,15 +47,21 @@
                     HYDRA & SPETSES FROM TOLO
 
                 </h1>
-                <p style="text-align:right;">
+                <p style="text-align:right; margin-top:-40px;">
                     Code: YDRASPETSES-GR
                 </p>
                 </hr>
                 <div style="display:grid; grid-template-columns: 1fr 1fr 1fr;">
-                    <p>One-day Cruise
-                    </p>
-                    <p><a href="#">ARGOSARONIKOS</a>, <a href="#">HYDRA</a>, <a href="#">SPETSES</a></p>
-                    <p>(Social media icons)</p>
+                    <div style="text-align:left;">
+                        <p>One-day Cruise
+                        </p>
+                    </div>
+                    <div style="text-align:center;">
+                        <p><a href="#">ARGOSARONIKOS</a>, <a href="/hydra">HYDRA</a>, <a href="/spetses">SPETSES</a>
+                        </p>
+                    </div>
+                    <div style="text-align:right;"><a href="https://www.facebook.com/PegasusCruises/" style="font-size:20px;"><i class="fa fa-facebook" style="padding-right:10px;"></i></a><a href="https://www.tripadvisor.com.gr/Attraction_Review-g1007321-d11150092-Reviews-Pegasus_Cruises-Tolon_Argolis_Region_Peloponnese.html" style="font-size:20px;"><i class="fa fa-tripadvisor"></i></a>
+                    </div>
                 </div>
                 <!-- carousel2 -->
                 <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -91,10 +97,10 @@
                     </a>
                 </div>
                 <!-- carousel end -->
-                <h3><b>Description</b></h3>
+                <h3 style="margin-top:20px;"><b>Description</b></h3>
                 <div style="display:grid; grid-template-columns: 1fr 1fr;">
 
-                    <div>
+                    <div style="margin-right:20px;">
                         <br><b>HYDRA & SPETSES FROM Tolo</b></br>One day cruise with Pegasus Cruises. Departure from Tolo for the picturesque island of Hydra with its unique singularity: the absence of cars on the island and the beautiful island of Spetses with its many trees, bays and beaches.
 
                         Escape from the everyday routine and enjoy the islands, the sun and the sea with Pegasus Cruises. You have the opportunity to spend 3 hours in Hydra and 2 hours in Spetses.
@@ -107,7 +113,7 @@
                     </div>
                 </div>
                 <div>
-                    <h5 style="background:#ffb300; color:#fff;">TRANSPORTATION FROM NAFPLION TO TOLO & BACK FOR CLIENTS WHO WILL GO ON OUR CRUISE</h5>
+                    <h5 style="background:#ffb300; color:#fff; border-radius:5px; padding: 5px 10px">TRANSPORTATION FROM NAFPLION TO TOLO & BACK FOR CLIENTS WHO WILL GO ON OUR CRUISE</h5>
                     <p>Cruise Price for adults: 38 €</br>
                         Cruise Price for children 5-12 years: 19 €</br>
 
@@ -183,7 +189,7 @@
                         </tbody>
                     </table>
                     <hr>
-                    <div style="background:#ffb300; color:#fff; font-size:18px; font-weight:bold; text-align:center;">
+                    <div style="background:#ffb300; color:#fff; font-size:18px; font-weight:bold; text-align:center; border-radius:5px;">
                         <p>Choose the Tavern – Restaurant of your choice</br>
                             Food in Spetses – Food in Hydra</br>
 
@@ -191,11 +197,10 @@
                     </div>
                     <p> You will have plenty of time to have a swim, wonder around the stone streets of the islands and enjoy tasty greek food at the various tavernas. While on board you can enjoy the amenities that our ships provide and relax in both our open and closed lounges.</p>
 
-                    <div style="background: #113f82; color:#fff; font-weight:bold;">
-                        <p>ROUTE: Tolo – Hydra – Spetses – Tolo</p>
-
+                    <div style="background: #113f82; color:#fff; font-weight:bold; padding-top: 5px; padding-bottom:5px; padding-left:5px; padding-right:5px; border-radius:5px;">
+                        <p style="margin-bottom:0;">ROUTE: Tolo – Hydra – Spetses – Tolo</p>
                     </div>
-                    <h3><b>Itinerary</b></h3>
+                    <h3 style="margin-top:15px;"><b>Itinerary</b></h3>
                     <div class="itinerary-structure" style="display:grid; grid-template-columns:1fr 10fr;">
                         <div class="itenerary-circles">
                             <p>8:00</p>
@@ -274,7 +279,7 @@
                     </p>
                     <p><b>By taxi from Nafplion:</b> approx. €18</p>
                     <h3><b>MAP</b></h3>
-                    <img src="images/pegasus-tolo-ydra-spetses-2.jpg" style="width:513px; height:284px;">
+                    <img src="images/pegasus-tolo-ydra-spetses-2.jpg" style="width:100%; height:auto;">
                 </div>
                 <!--
                     <div class=" tour-booking-panel" margin-top: -25px>
@@ -289,17 +294,23 @@
         <!-- component 2 -->
         <div class="col-4 ml-2">
             <header class="sidebox  ">
-                <div>
 
+                <div class="container mt-1 ">
+                    <div class="d-flex justify-content-center">
+                        <button class="btn-lg btn-light" type="button" disabled>
+                            <select class="selectpicker form-control-lg border-2 px-4 py-4 rounded shadow">
+                                <option hidden value="placeholder">Επιλογή ημερήσιας διαδρομής</option>
 
-  <!-- AUTO COMPLETE DROPDOWN -->
-  <select class="selectpicker form-control-lg border-2 px-4 py-4 rounded shadow">
-                                    <option hidden value="placeholder">Επιλογή ημερήσιας διαδρομής</option>
-                                @foreach ($destinations as $destination)
-                                <option value="{{ $destination->id }}">{{ $destination->name }}</option>
-                                @endforeach
 
                             </select>
+                        </button>
+                    </div>
+                    <!-- AUTO COMPLETE DROPDOWN -->
+                    <!-- <select class="selectpicker form-control-lg border-2 px-4 py-4 rounded shadow">
+                                        <option hidden value="placeholder">Επιλογή ημερήσιας διαδρομής</option>
+
+
+                                    </select> -->
 
                     <div class="d-grid gap-2 mb-2">
                         <button class="btn-lg btn-light" type="button" disabled><i class="fa fa-calendar"></i> <input type="text" class="datepicker" placeholder="Επιλέξτε ημερομηνία"></button>
@@ -780,8 +791,8 @@
                         </div>
                     </div>
                 </div>
+
         </div>
-    </div>
     </div>
     </header>
 
@@ -1162,58 +1173,6 @@
             g.classList.add("ml-4", "d-none");
         }
     }
-</script>
-<!-- Include Choices JavaScript (latest) -->
-<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
-
-<script src="js/jquery.min.js"></script>
-<script src="js/jquery-ui.js"></script>
-<script>
-    /* ==============================================
-    CUSTOM SELECT
-  ============================================== */
-    const sorting = document.querySelector('.selectpicker');
-    const commentSorting = document.querySelector('.selectpicker');
-    const sortingchoices = new Choices(sorting, {
-        placeholder: false,
-        itemSelectText: ''
-    });
-
-
-    // Trick to apply your custom classes to generated dropdown menu
-    let sortingClass = sorting.getAttribute('class');
-    window.onload = function() {
-        sorting.parentElement.setAttribute('class', sortingClass);
-    }
-
-
-    $(".datepicker").datepicker({
-        minDate: ('+1d'),
-        dateFormat: 'dd/mm/yy',
-        beforeShowDay: function(date) {
-            var string = jQuery.datepicker.formatDate('yy-mm-dd', date);
-            var isEnabled = (EnableDates.indexOf(string) != -1); // used to enable if its a route
-            return [isEnabled];
-        },
-        changeMonth: true,
-        changeYear: true
-    });
-
-
-    var EnableDates = new Array(); // this array will store the routes dates after being extracted form the JSON
-    $.ajax({
-        url: 'js/routes-daysoff.json', //example jason
-        method: 'GET',
-        dataType: 'json',
-        success: function(data) {
-            // now the data is loaded and we will traverse over the "athens-aigina" 's route and create an array to of dates of routes
-            var listOfRoutes = data['athens-aigina'].routes; //here will be the var that comes from the destination inputs exp"athens-aigina" or "athens-thasos"
-            for (var i in listOfRoutes) {
-                EnableDates.push(listOfRoutes[i].date); // push the date to our array for checking afterwards
-            }
-
-        }
-    });
 </script>
 
 </html>
