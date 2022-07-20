@@ -11367,7 +11367,7 @@ header.sidebox {
   padding-left: 15px;
   padding-right: 15px;
   min-height:100%;
-  background:linear-gradient(0deg, rgba(73, 95, 176, 0.3), rgba(0, 72, 150, 0.3)), url("../images/spetses-pegasus-cruises.jpg");
+  background:linear-gradient(0deg, rgba(73, 95, 176, 0.3), rgb(0 72 150 / 80%));
   background-size:cover;
 }
 

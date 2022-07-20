@@ -64,7 +64,8 @@ Route::get('/booking-payment', function () {
 });
 
 Route::get('/cruise-hydra-spetses-from-tolo', function () {
-   return view('cruise-hydra-spetses-from-tolo');
+   $destinations = DB::table('destinations')->get();
+   return view('cruise-hydra-spetses-from-tolo')->with("destinations", $destinations);
 });
 
 Route::get('/cruise-skiathos-koukounaries-from-glyfa', function () {
