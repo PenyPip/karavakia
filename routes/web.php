@@ -87,3 +87,7 @@ Route::get('/loginf', function () {
 Route::get('/thank-you', function () {
    return view('thank-you');
 });
+
+Route::get('/adminb2b', function () {
+   return view('adminb2b');
+});
