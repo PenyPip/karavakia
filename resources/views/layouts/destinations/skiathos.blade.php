@@ -16,7 +16,8 @@
     }
 
     .navbar.navbar-light.bg-custom.static-top .container,
-    .container.position-relative {
+    .container.position-relative,
+    footer .container {
         width: 100% !important;
     }
 
