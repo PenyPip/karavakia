@@ -23,6 +23,11 @@ Route::get('/homeSearch', function () {
    $destinations = DB::table('destinations')->get();
    return view('homeSearch')->with("destinations", $destinations);
 });
+//call from api
+//Route::get('/homeSearch', 'SearchController@index');
+
+
+
 Route::get('/passengerDetails', function () {
    return view('passengerDetails');
 });
