@@ -55,6 +55,11 @@ to a SQL connection error, check the `.env` file (since it may have received mod
 and repeat the installation process.
 
 
+** in case of error:  Base table or view not found: 1146 Table 'karavakia.default_addons_modules' doesn't exist do composer update, and then php artisan install. On next errors, php artisan install --ready **
+
+
+
+
 - Generate a project key by running `php artisan key:generate`
 - Test the project's functionality by running `php artisan serve
 
