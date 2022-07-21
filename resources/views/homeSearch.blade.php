@@ -174,8 +174,8 @@
         <h3>ΠΡΟΟΡΙΣΜΟΙ</h3>
     </div>
     <div class="container" style="margin-bottom:80px;">
-        <div class="row">
-            <div class="col" style="margin:20px;">
+        <div style="display:grid; grid-template-columns: 1fr 1fr 1fr">
+            <div style="margin:20px;">
                 <div style="margin-left: 67.5px; margin-bottom:20px; background:url(images/cropped-for-home-hydra-pegasus-cruise4-370x370.jpg); border-radius:100%; text-align:center; color:#fff; background-position:center; width:270px; height:270px; background-repeat:no-repeat;">
                     <p style="padding-top:50%;"><a href="/hydra" style="color:#fff; font-weight:500;">ΥΔΡΑ</a></br></p>
                 </div>
@@ -183,7 +183,7 @@
                     <p style="padding-top:50%;"><a href="/spetses" style="color:#fff; font-weight:500;">ΣΠΕΤΣΕΣ</a></p>
                 </div>
             </div>
-            <div class="col" style="margin:20px;">
+            <div style="margin:20px;">
                 <div style="margin-left: 67.5px; margin-bottom:20px; background:url(images/cropped-for-home-skiathos-page-4-370x370.jpg); border-radius:100%; text-align:center; color:#fff; background-position:center; width:270px; height:270px; background-repeat:no-repeat;">
                     <p style="padding-top:50%;"><a href="/skiathos" style="color:#fff; font-weight:500;">ΣΚΙΑΘΟΣ</a></br></p>
                 </div>
@@ -191,7 +191,7 @@
                     <p style="padding-top:50%;"><a href="/skopelos" style="color:#fff; font-weight:500;">ΝΑΥΠΛΙΟ</a></p>
                 </div>
             </div>
-            <div class="col" style="margin:20px;">
+            <div style="margin:20px;">
                 <div style="margin-left: 67.5px; margin-bottom:20px; background:url(images/cropped-for-home-alonissos-370x370.jpg); border-radius:100%; text-align:center; color:#fff; background-position:center; width:270px; height:270px; background-repeat:no-repeat;">
                     <p style="padding-top:50%;"><a href="/alonissos" style="color:#fff; font-weight:500;">ΑΛΟΝΗΣΣΟΣ</a></br></p>
                 </div>
