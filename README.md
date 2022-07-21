@@ -42,6 +42,7 @@ not to use special characters (namely #) in the `DB_PASSWORD` field, since the
     DB_CONNECTION=mysql
     DB_HOST=<host>
     DB_DATABASE=<database_name>
+    DB_PORT=3306
     DB_USERNAME=<database_username>
     DB_PASSWORD=<database_password>
     ```
