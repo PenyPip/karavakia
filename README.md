@@ -42,6 +42,7 @@ not to use special characters (namely #) in the `DB_PASSWORD` field, since the
     DB_CONNECTION=mysql
     DB_HOST=<host>
     DB_DATABASE=<database_name>
+    DB_PORT=3306
     DB_USERNAME=<database_username>
     DB_PASSWORD=<database_password>
     ```
@@ -52,6 +53,11 @@ not to use special characters (namely #) in the `DB_PASSWORD` field, since the
 - Run `php artisan install` and follow the installation wizard. If the wizard fails due 
 to a SQL connection error, check the `.env` file (since it may have received modifications) 
 and repeat the installation process.
+
+
+** in case of error:  Base table or view not found: 1146 Table 'karavakia.default_addons_modules' doesn't exist do composer update, and then php artisan install. On next errors, php artisan install --ready **
+
+
 
 
 - Generate a project key by running `php artisan key:generate`
