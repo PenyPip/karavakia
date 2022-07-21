@@ -27,6 +27,15 @@
         background: none;
         color: #26bdf7;
     }
+
+    .itinerary-structure h2 {
+        font-size: 22px;
+    }
+
+    .itinerary-structure {
+        display: grid;
+        grid-template-columns: 1fr 10fr;
+    }
 </style>
 
 
@@ -34,8 +43,8 @@
     <!--Product Content-->
     <img src="/images/bg-cruises-top.jpg" style="background-repeat:no-repeat; background-size:cover; width:100%; height:140px;">
     <div class="container">
-        <div class="row">
-            <div class="col-8" style="margin-top:50px; background-color:#F2F2F2; border-radius:8px; padding:15px;">
+        <div class="tour" style="display:grid; grid-template-columns: 2fr 1fr;">
+            <div class="tour-content" style="margin-top:50px; background-color:#F2F2F2; border-radius:8px; padding:15px;">
                 <h1 style="font-weight:bold; font-size:24px;">
                     SKIATHOS & KOUKOUNARIES BEACH FROM GLYFA
                 </h1>
@@ -43,15 +52,15 @@
                     Code: LMJUYH
                 </p>
                 </hr>
-                <div class="row">
-                    <div class="col" style="text-align:left;">
+                <div style="display:grid; grid-template-columns: 1fr 1fr 1fr">
+                    <div style="text-align:left;">
                         <p>One day cruise
                         </p>
                     </div>
-                    <div class="col" style="text-align:center;">
+                    <div style="text-align:center;">
                         <p><a href="#">GREECE</a>, <a href="#">CRUISE</a>, <a href="#">SPORADES</a></p>
                     </div>
-                    <div class="col" style="text-align:right;">
+                    <div style="text-align:right;">
                         <p><a href="https://www.facebook.com/PegasusCruises/" style="font-size:20px;"><i class="fa fa-facebook" style="padding-right:10px;"></i></a><a href="https://www.tripadvisor.com.gr/Attraction_Review-g1007321-d11150092-Reviews-Pegasus_Cruises-Tolon_Argolis_Region_Peloponnese.html" style="font-size:20px;"><i class="fa fa-tripadvisor"></i></a></p>
                     </div>
                 </div>
@@ -91,8 +100,8 @@
                 <!-- carousel end -->
 
                 <h3 style="margin-top:20px;"><b>Description</b></h3>
-                <div class="row">
-                    <div class="col" style="margin-right:20px;">
+                <div style="display:grid; grid-template-columns: 1fr 1fr;">
+                    <div style="margin-right:20px;">
 
                         <p>One-day cruise with PEGASUS CRUISES departing from Glyfa for the enchanting island of Skiathos and the lovely beach of Koukounaries.
 
@@ -102,7 +111,7 @@
                             There is plenty of time for a swim in Koukounaries and lunch at the beautiful tavernas in Skiathos. The rest of the time you can enjoy the comforts of our ships: the closed air conditioned lounges and our open air decks</p>
                         </p>
                     </div>
-                    <div class="col">
+                    <div>
                         <img src="images/skiathos-krouaziera1-1.jpg" style="width:100%; height:auto;" />
                     </div>
                 </div>
@@ -181,144 +190,102 @@
                     </div>
                     <img src="images/pegasus-glifa-koukounaries-skiathos.jpg" style="width:100%; height:auto;" />
                     <h3><b>Itinerary</b></h3>
-                    <div class="row">
-                        <div class="col-1" style="margin-right:16px;">
-                            <div class="itenerary-circles">
-                                <p>8:30</p>
-                            </div>
+                    <div class="itinerary-structure" style="display:grid; grid-template-columns:1fr 10fr;">
+                        <div class="itenerary-circles">
+                            <p>8:30</p>
                         </div>
-                        <div class="col-9">
-                            <div>
-                                <h2 style="font-size:20px;"><strong>Boarding</strong></h2>
-                                <p>Please be at the port on time since departures are right on time.</p>
-                            </div>
+                        <div>
+                            <h2><strong>Boarding</strong></h2>
+                            <p>Please be at the port on time since departures are right on time.</p>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-1" style="margin-right:16px;">
-                            <div class="itenerary-circles">
-                                <p>09:05</p>
-                            </div>
+                        <div class="itenerary-circles">
+                            <p>09:05</p>
                         </div>
-                        <div class="col-9">
-                            <div>
-                                <h2 style="font-size:20px;"><strong>Departure from Glyfa
-                                    </strong></h2>
-                                <p>On our right we can see Agiokampos, from where North Evoia connects with Northern Greece. A little while later we’ll see Oreoi, a small village which hosts a big fishing fleet.
-                                    <br>On our left we’ll see Argyronisos island with its traditional lighthouse on the top of the hill. The villages Trikeri and Agia Kyriaki just at the south end of Pilion.
-                                    <br>We’ll pass by near Pefki, a village literally inside a pine forest, a tourist resort in the summer.
-                                    <br>On our right we’ll see the Artemisio where the naval combat took place between the greeks and the persians in 480 b.c.
-                                    <br>Before we reach Skiathos a party will take place on board with dancers in traditional costumes dancing greek and foreign dances.
-                                </p>
-                            </div>
+                        <div>
+                            <h2><strong>Departure from Glyfa
+                                </strong></h2>
+                            <p>On our right we can see Agiokampos, from where North Evoia connects with Northern Greece. A little while later we’ll see Oreoi, a small village which hosts a big fishing fleet.
+                                <br>On our left we’ll see Argyronisos island with its traditional lighthouse on the top of the hill. The villages Trikeri and Agia Kyriaki just at the south end of Pilion.
+                                <br>We’ll pass by near Pefki, a village literally inside a pine forest, a tourist resort in the summer.
+                                <br>On our right we’ll see the Artemisio where the naval combat took place between the greeks and the persians in 480 b.c.
+                                <br>Before we reach Skiathos a party will take place on board with dancers in traditional costumes dancing greek and foreign dances.
+                            </p>
                         </div>
-                    </div>
 
-                    <div class="row">
-                        <div class="col-1" style="margin-right:16px;">
-                            <div class="itenerary-circles">
-                                <p>11:15</p>
-                            </div>
+                        <div class="itenerary-circles">
+                            <p>11:15</p>
                         </div>
-                        <div class="col-9">
-                            <div>
-                                <h2 style="font-size:20px;"><strong>Arrival in Koukounaries, the most famous beach in Skiathos
-                                    </strong></h2>
-                                <p>A wonderful sandy beach with the trees reaching the edge of the beach. There sits “Skiathos Palace”, the largest hotel in <b>Skiathos</b>. Behind the first lines of trees ther is a laggon with ducks and swans.</p>
-                            </div>
+                        <div>
+                            <h2><strong>Arrival in Koukounaries, the most famous beach in Skiathos
+                                </strong></h2>
+                            <p>A wonderful sandy beach with the trees reaching the edge of the beach. There sits “Skiathos Palace”, the largest hotel in <b>Skiathos</b>. Behind the first lines of trees ther is a laggon with ducks and swans.</p>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-1" style="margin-right:16px;">
-                            <div class="itenerary-circles">
-                                <p>13:45</p>
-                            </div>
+                        <div class="itenerary-circles">
+                            <p>13:45</p>
                         </div>
-                        <div class="col-9">
-                            <div>
-                                <h2 style="font-size:20px;"><strong>Departure sailing near the island’s beaches, going towards Skiathos, the town</strong></h2>
-                                <p>We’ll see the islands of Small and Large Tsougria and in the background the island of Skopelos.
+                        <div>
+                            <h2><strong>Departure sailing near the island’s beaches, going towards Skiathos, the town</strong></h2>
+                            <p>We’ll see the islands of Small and Large Tsougria and in the background the island of Skopelos.
 
-                                </p>
-                            </div>
+                            </p>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-1" style="margin-right:16px;">
-                            <div class="itenerary-circles">
-                                <p>14:15</p>
-                            </div>
+                        <div class="itenerary-circles">
+                            <p>14:15</p>
                         </div>
-                        <div class="col-9">
-                            <div>
-                                <h2 style="font-size:20px;"><strong> Arrival at the town of Skiathos</strong></h2>
-                                <p>Free time to visit Mpourtzi, which is connected to the town with a bridge, the old venetian fortress which hosts the folklore museum, the house of the greek author Papadiamantis, the island’s narrow graphic alleys and the smallest airport of Europe – you can feel the heat form the airplanes’s engines as they take off.</p>
-                            </div>
+                        <div>
+                            <h2><strong> Arrival at the town of Skiathos</strong></h2>
+                            <p>Free time to visit Mpourtzi, which is connected to the town with a bridge, the old venetian fortress which hosts the folklore museum, the house of the greek author Papadiamantis, the island’s narrow graphic alleys and the smallest airport of Europe – you can feel the heat form the airplanes’s engines as they take off.</p>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-1" style="margin-right:16px;">
-                            <div class="itenerary-circles">
-                                <p>16:45</p>
-                            </div>
+                        <div class="itenerary-circles">
+                            <p>16:45</p>
                         </div>
-                        <div class="col-9">
-                            <div>
-                                <h2 style="font-size:20px;"><strong>Departure</strong></h2>
-                                <p>The party begins again on board with dances and treats.
+                        <div>
+                            <h2><strong>Departure</strong></h2>
+                            <p>The party begins again on board with dances and treats.
 
-                                </p>
-                            </div>
+                            </p>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-1" style="margin-right:16px;">
-                            <div class="itenerary-circles">
-                                <p>19:00</p>
-                            </div>
+                        <div class="itenerary-circles">
+                            <p>19:00</p>
                         </div>
-                        <div class="col-9">
-                            <div>
-                                <h2 style="font-size:20px;"><strong>Arrival in Glyfa
-                                    </strong></h2>
-                                <p>A journey full of happy memories comes to an end.
+                        <div>
+                            <h2><strong>Arrival in Glyfa
+                                </strong></h2>
+                            <p>A journey full of happy memories comes to an end.
 
-                                </p>
-                            </div>
+                            </p>
                         </div>
+
                     </div>
+                    <p style="text-align: center;"><span style="font-size: 8pt;">Please note that the timings are approximate. All sailing times from the islands will be confirmed on the day, on the boat. Itinerary can be changed or cancelled without prior notice.
+
+                        </span></p>
+
+                    <h3><b>HOW TO REACH US</b></h3>
+                    <p><b>From Athens</b></p>
+                    <p>Bus: Take the bus at KTEL FTHIOTIDAS to Lamia. (2.5 hours journey) There you change for KTEL STYLIDAS and you reach your destination, glyfa.</p>
+                    <p>Train: You get the train at Larissis Station in Athens towards Thessaloniki. You get off at Lainokladi station, near Lamia and from there you continue using the bus from KTEL Lamias to KTEL STYLIDAS to reach your destination, Glyfa.</p>
+                    <p>Car: You take the highway Athens-Thessaloniki (distance 270 klms) and after passing by the tolls in Pelasgia there is a sign right towards Glyfa. Estimated travelling time 2,5 hours.</p>
+                    <p>Ferry boat: If you want to come through the island of Evoia, you can leave the highway near Chalkida and continue towards northern Evoia OR at Arkitsa you can cross over by ferry boat to Edipsos and then continue using the ferry from Agiokampos to Glyfa.</p>
+                    <p>If you wish to come through Evoia there are ferry boats that connect Fthiotida with Evoia, Arkitsa and Glyfa. There are 8 itineraries daily from Agiokampos to Glyfa and 12 from Arkitsa to Edipsos.</p>
+                    <br>
+                    <p><b>From Thessaloniki</b></p>
+                    <p>Bus: there are several itineraries daily towards Athens. You’ll get off at the tolls of Pelasgia and wait for the connection of KTEL STYLIDAS to Glyfa.</p>
+                    <p><b>From Lamia</b></p>
+                    <p>Bus: there is a bus 2 times a day for Glyfa with KTEL STYLIDAS.</p>
+                    <p>Car: The distance is 59 klms and the average estimated travelling time is 30 minutes.</p>
+                    <h3><b>MAP</b></h3>
+                    <img src="images/pegasus-glifa-koukounaries-skiathos.jpg" style="width:100%; height:auto;">
                 </div>
-
-
-                <p style="text-align: center;"><span style="font-size: 8pt;">Please note that the timings are approximate. All sailing times from the islands will be confirmed on the day, on the boat. Itinerary can be changed or cancelled without prior notice.
-
-                    </span></p>
-
-                <h3><b>HOW TO REACH US</b></h3>
-                <p><b>From Athens</b></p>
-                <p>Bus: Take the bus at KTEL FTHIOTIDAS to Lamia. (2.5 hours journey) There you change for KTEL STYLIDAS and you reach your destination, glyfa.</p>
-                <p>Train: You get the train at Larissis Station in Athens towards Thessaloniki. You get off at Lainokladi station, near Lamia and from there you continue using the bus from KTEL Lamias to KTEL STYLIDAS to reach your destination, Glyfa.</p>
-                <p>Car: You take the highway Athens-Thessaloniki (distance 270 klms) and after passing by the tolls in Pelasgia there is a sign right towards Glyfa. Estimated travelling time 2,5 hours.</p>
-                <p>Ferry boat: If you want to come through the island of Evoia, you can leave the highway near Chalkida and continue towards northern Evoia OR at Arkitsa you can cross over by ferry boat to Edipsos and then continue using the ferry from Agiokampos to Glyfa.</p>
-                <p>If you wish to come through Evoia there are ferry boats that connect Fthiotida with Evoia, Arkitsa and Glyfa. There are 8 itineraries daily from Agiokampos to Glyfa and 12 from Arkitsa to Edipsos.</p>
-                <br>
-                <p><b>From Thessaloniki</b></p>
-                <p>Bus: there are several itineraries daily towards Athens. You’ll get off at the tolls of Pelasgia and wait for the connection of KTEL STYLIDAS to Glyfa.</p>
-                <p><b>From Lamia</b></p>
-                <p>Bus: there is a bus 2 times a day for Glyfa with KTEL STYLIDAS.</p>
-                <p>Car: The distance is 59 klms and the average estimated travelling time is 30 minutes.</p>
-                <h3><b>MAP</b></h3>
-                <img src="images/pegasus-glifa-koukounaries-skiathos.jpg" style="width:100%; height:auto;">
-            </div>
-            <!--
+                <!--
                     <div class=" tour-booking-panel" margin-top: -25px>
                         <p style="padding:10px; background-color: #FDB200; height: 50px; width: 280px; text-align: center; margin-top: -25px; color: #fff; font-size: 20px;">Price: <font style="font-weight:bold;">28€</font>
                         </p>
                     </div>
                     -->
-        </div>
+            </div>
 
-    </div>
+        </div>
 
     </div>
     <!-- Footer-->
