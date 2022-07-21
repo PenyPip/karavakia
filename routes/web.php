@@ -94,5 +94,6 @@ Route::get('/thank-you', function () {
 });
 
 Route::get('/adminb2b', function () {
-   return view('adminb2b');
+   $destinations = DB::table('destinations')->get();
+   return view('adminb2b')->with("destinations", $destinations);
 });
