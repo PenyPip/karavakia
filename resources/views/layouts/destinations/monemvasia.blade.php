@@ -17,7 +17,8 @@
 
     .navbar.navbar-light.bg-custom.static-top .container,
     .container.position-relative,
-    footer .container {
+    footer .container,
+    .fullhorizontal {
         width: 100% !important;
     }
 
@@ -110,7 +111,7 @@
                 </div>
             </div>
         </div>
-        <h3 style="margin-bottom:80px; background:url(/images/monemvasia-nea-poli.jpg); background-position:center center; background-repeat:no-repeat; width:100%; height:380px; position:relative; font-size:46px; font-weight:100; color:#fff; padding-top:175px; padding-left:61.5px; padding-right:61.5px; top:50%;">More about the island</h3>
+        <h3 class="fullhorizontal" style="margin-bottom:80px; background:url(/images/monemvasia-nea-poli.jpg); background-position:center center; background-repeat:no-repeat; width:100%; height:380px; position:relative; font-size:46px; font-weight:100; color:#fff; padding-top:175px; padding-left:61.5px; padding-right:61.5px; top:50%;">More about the island</h3>
         <div class="row">
             <div class="col-8">
                 <div style="margin-left:50px; margin-right:50px; margin-bottom:85px;">
