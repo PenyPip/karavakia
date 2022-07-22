@@ -81,7 +81,10 @@
         "anomaly/html_block-extension": "~1.0.0",
         "anomaly/wysiwyg_block-extension": "~1.0.0",
         "pyrocms/starter-theme": "~1.0.0",
-        "pyrocms/accelerant-theme": "~1.2.0"
+        "pyrocms/accelerant-theme": "~1.2.0",
+        "guzzlehttp/guzzle": "^7.4",
+        "pear/http_request2": "^2.5",
+        "artisaninweb/laravel-soap": "0.3.0.10"
     },
     "require-dev": {
         "filp/whoops": "~2.0",

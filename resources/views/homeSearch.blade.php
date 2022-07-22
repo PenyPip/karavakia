@@ -19,7 +19,7 @@
         transform: scale(1.5);
     }
 </style>
-
+<?php  var_dump($destinations) ; ?>
 <body>
     <!-- Masthead-->
     <header class="searchbox">
@@ -36,10 +36,9 @@
                             <!-- AUTO COMPLETE DROPDOWN -->
                             <select class="selectpicker form-control-lg border-2 px-4 py-4 rounded shadow">
                                 <option hidden value="placeholder">Επιλογή ημερήσιας διαδρομής</option>
-                                @foreach ($destinations as $destination)
-                                <option value="{{ $destination->id }}">{{ $destination->name }}</option>
-                                @endforeach
-
+                                
+                                
+                                
                             </select>
                         </div>
                     </div>
